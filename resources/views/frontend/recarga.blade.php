@@ -1,14 +1,14 @@
 <div class="container pt-5 pb-5" >
   <div class="row">
     <div class="col-12 text-center pb-5">
-      <h1 class="c-black title-h1">¡Recarga ahora y Phonealo!</h1>
+      <h1 class="c-black title-h1">{{trans('messages.recarga1')}}</h1>
     </div>
     <div class="col-12 pb-5">
       <div class="row d-flex justify-content-center">        
           <div class="col-9 col-md-5 col-lg-4">
             <form action="https://app.phonealo.net/payment/init" method="get" accept-charset="utf-8">
             <select name="amount" class="input ">
-               <option value="">Selecciona el Importe</option>
+               <option value="">{{trans('messages.recarga2')}}</option>
                 <option value="5"><span class='moneda'></span>5 €</option>
                 <option value="10"><span class='moneda'></span>10 €</option>
                 <option value="20"><span class='moneda'></span>20 €</option>

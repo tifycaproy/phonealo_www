@@ -5,7 +5,7 @@
                 <div class="col-md-6 active">
                     {{-- <span class="badge">Legacy</span> --}}
                    
-                    <h2 class="text-center">¡CONTACTA!</h2>
+                    <h2 class="text-center">{{trans('messages.contacto1')}}</h2>
                     <form action="{{route('contacto_submit')}}" method="post" accept-charset="utf-8">
                         <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}">
                         <div class="form-group">
@@ -13,11 +13,11 @@
                             <input type="email" class="col-md-12 form-control email" id="email" name="email" required placeholder="Tu Email">
                         </div>
                         <div class="form-group">
-                            <label class="label-text" for="tel">Teléfono</label>
+                            <label class="label-text" for="tel">{{trans('messages.contacto2')}}</label>
                             <input type="text" class="col-md-12 form-control email" id="tel" name="tel" required placeholder="Tu Telefono">
                         </div>
                         <div class="form-group">
-                            <label class="label-text" for="mensaje">Mensaje</label>
+                            <label class="label-text" for="mensaje">{{trans('messages.contacto3')}}</label>
                             <textarea name="mensaje" class="form-control mensaje" id="mensaje" rows="5" required></textarea>
                         </div>
                         <div class="form-group text-right">

@@ -21,6 +21,16 @@ Route::post('contacto_submit', 'ContactoControler@contacto')->name('contacto_sub
 
 Route::get('tarifas', 'frontend\FrontendController@tarifas');
 
+//geolocalizacion
+Route::get('locale', function () {
+    return \App::getLocale();
+});
+
+Route::get('locale/{locale}', function ($locale) {
+    \Session::put('locale', $locale);
+    return redirect()->back();
+});
+
 // LANDING
 
 Route::get('ec', 'landingController@ecuador')->name('ec');

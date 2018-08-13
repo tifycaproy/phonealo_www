@@ -107,23 +107,16 @@
     </div>
 
     {{-- MENU --}}
-    {{-- <div id="menu" class="col-12 position-fixed position-absolute-xs" >   
-        <div class="row d-flex justify-content-center justify-content-sm-between align-items-center background-white">
-            <div class="col-10 col-sm-2 pl-5 py-3 pl-1-xs" >
-                <img src="assets/logo.svg" class=" img-fluid"/>
-            </div>
-            <div class="col-12 col-sm-auto pb-1-xs pr-5 p-0-xs text-center">
-                    <a href="https://app.phonealo.net//balance" title="Ingresa">{{trans('messages.link3')}}</a> |
-                    <a href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
-                    <a href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
-                    
-            </div> 
-        </div> 
-    </div> --}}
-    <div class="col-12 c-white text-right py-1" style="background: #192430; font-size: .8rem;  height: 30px">
-        <p>{{ $country }}</p>
-        <a class="c-white" href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
-        <a class="c-white" href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
+
+    <div class="col-12 c-white d-flex justify-content-between py-1" style="background: #192430; font-size: .8rem;  height: 30px">
+        <div>
+            <span>{{$pais}} - {{ $region }}, {{ $ciudad }}</span>  
+        </div>
+        <div>
+            <a class="c-white" href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
+            <a class="c-white" href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
+        </div>
+        
     </div>
 
     <nav id="menu" class="navbar  navbar-expand-lg navbar-light background-menu" style="height: 80px">
@@ -213,6 +206,8 @@
                     B-Duc Mircea Cel Batran H5, Targoviste, Romania
                     <br>
                     <b>Telefono: </b>+34 607333715
+                    <br>
+
                 </div>
                 <div class="col-12 mt-3-xs col-md-5 col-md-offset-1 col-sm-6">
                     <div class="row d-flex justify-content-center justify-content-sm-end ">
@@ -249,9 +244,11 @@
     </div>
     {{-- FIN FOOTER --}}
 
+    @include('frontend.pamigo');
+
     <!--Scripts-->
     <script language="JavaScript" type="text/javascript">
-       TrustLogo("http://www.phonealo.com/comodo_secure_seal_76x26_transp.png", "CL1", "none");
+      // TrustLogo("http://www.phonealo.com/comodo_secure_seal_76x26_transp.png", "CL1", "none");
    </script>
    <a href="https://www.positivessl.com/" id="comodoTL"></a>
     <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script>

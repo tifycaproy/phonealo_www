@@ -114,10 +114,10 @@
             </div>
             <div class="col-12 col-sm-auto pb-1-xs pr-5 p-0-xs text-center">
                 {{-- <a href="" title="">ES</a> | <a href="" title="">EN</a>  --}}
-                    
-                    <a href="{{url('locale/en')}}">{{trans('messages.link1')}}</a>
+                    <a href="https://app.phonealo.net//balance" title="Ingresa">{{trans('messages.link3')}}</a> |
+                    <a href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
                     <a href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
-                    <a href="https://app.phonealo.net//balance" title="Ingresa">{{trans('messages.link3')}}</a>
+                    
             </div> 
         </div> 
     </div>

@@ -179,7 +179,7 @@ if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(mostrarCoordenadas, mostrarError, { enableHighAccuracy: true, timeout: tiempo_de_espera, maximumAge: 0 } );
 }
 else {
-  alert("La Geolocalización no es soportada por este navegador");
+  //alert("La Geolocalización no es soportada por este navegador");
 }
 
 function mostrarCoordenadas(position) {
@@ -195,7 +195,7 @@ function mostrarCoordenadas(position) {
 
 function mostrarError(error) {
   var errores = {1: 'Permiso denegado', 2: 'Posición no disponible', 3: 'Expiró el tiempo de respuesta'};
-  alert("Error: " + errores[error.code]);
+  //alert("Error: " + errores[error.code]);
 }
 
 </script>

@@ -20,8 +20,8 @@ return[
   'contacto1' =>'¡CONTACTA!',
   'contacto2' =>'Teléfono',
   'contacto3' =>'Mensaje',
-  'link1' => 'Inglés',
-  'link2' => 'Español',
+  'link1' => 'EN',
+  'link2' => 'ES',
   'link3' => 'Tú Phonealo',  
 ];
 

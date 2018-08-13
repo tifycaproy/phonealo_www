@@ -107,20 +107,44 @@
     </div>
 
     {{-- MENU --}}
-    <div id="menu" class="col-12 position-fixed position-absolute-xs" >   
+    {{-- <div id="menu" class="col-12 position-fixed position-absolute-xs" >   
         <div class="row d-flex justify-content-center justify-content-sm-between align-items-center background-white">
             <div class="col-10 col-sm-2 pl-5 py-3 pl-1-xs" >
                 <img src="assets/logo.svg" class=" img-fluid"/>
             </div>
             <div class="col-12 col-sm-auto pb-1-xs pr-5 p-0-xs text-center">
-                {{-- <a href="" title="">ES</a> | <a href="" title="">EN</a>  --}}
                     <a href="https://app.phonealo.net//balance" title="Ingresa">{{trans('messages.link3')}}</a> |
                     <a href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
                     <a href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
                     
             </div> 
         </div> 
+    </div> --}}
+    <div class="col-12 c-white text-right py-1" style="background: #192430; font-size: .8rem;  height: 30px">
+        <p>{{ $country }}</p>
+        <a class="c-white" href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
+        <a class="c-white" href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
     </div>
+
+    <nav id="menu" class="navbar  navbar-expand-lg navbar-light background-menu" style="height: 80px">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand col-10 col-sm-2 pl-5  pl-1-xs" href="#"><img src="{{ asset('assets/logo.svg') }}" class=""/></a>
+
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://app.phonealo.net/balance">Tú Phonealo <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#pamigo">Tú Amigo</a>
+          </li>
+         
+        </ul>
+       
+      </div>
+    </nav>
     {{--FIN MENU --}}
 
 
@@ -137,8 +161,7 @@
      @endif
 
     {{-- SLIDER --}}
-    {{-- PARA ASEGURAR EL AJUSTE DE LA IMAGENES VERIFIQUE QUE LAS IMAGENES POSEAN LAS MISMAS DIMENCIONES 1920 × 1279/ PUEDE AYUDARSE EMPLEADO EL ARCHIVO .PSD QUE SE ENCUENTRA EN PUBLIC/ASSETS/IMG.PSD --}}
-    <div id="carouselExampleSlidesOnly" class="carousel slide row-masthead col-12 p-0" data-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide row-masthead col-12 p-0" data-ride="carousel" style="top:0px">
         <div class="carousel-inner">
             <div class="carousel-item active" >
               <div class="position-absolute col-12 col-md-8 col-lg-6 p-5  p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
@@ -230,7 +253,7 @@
     <script language="JavaScript" type="text/javascript">
        TrustLogo("http://www.phonealo.com/comodo_secure_seal_76x26_transp.png", "CL1", "none");
    </script>
-   <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
+   <a href="https://www.positivessl.com/" id="comodoTL"></a>
     <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script>
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/parallax.min.js')}}"></script>

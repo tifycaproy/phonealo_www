@@ -50,15 +50,13 @@
                 'background-position': '0 -' + posicion + 'px'
             });
 
-            console.log(posicion);
-
             if (barra > 30) {
                 $('#menu').addClass('fixed-top');
                 $('.iPhone').css({'top':'120px'});
                
             }else{
                 $('#menu').removeClass('fixed-top');
-                $('.iPhone').css({'top':'60px'});
+                $('.iPhone').css({'top':'70px'});
             }
            
         });

@@ -6,6 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Http\Request;
 
 class pamigosMail extends Mailable
 {
@@ -26,8 +27,17 @@ class pamigosMail extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(Request $request)
     {
-        return $this->view('view.name');
+        $email_amigo = $request['email_amigo'];
+        $nombre_amigo = $request['nombre_amigo'];
+
+        return $this->from('contact@phonealo.com')
+                    ->view('frontend.mail.mailPamigo')
+                    ->with([
+                            'email_amigo' => $email_amigo,
+                            'nombre_amigo' => $nombre_amigo
+                      ])
+                    ->subject('¡Participa Conmigo!');  
     }
 }

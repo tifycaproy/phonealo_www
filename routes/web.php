@@ -38,3 +38,8 @@ Route::get('cu', 'landingController@cuba')->name('cu');
 
 Route::post('email_landing', 'landingController@email')->name('email_landing');
 Route::get('verifica_email', 'landingController@verifica')->name('verifica_email');
+
+// PROGRAMA AMIGO
+
+Route::post('registroAmigo', 'pamigosController@registroAmigo')->name('registroAmigo');
+Route::get('verifica_usuario', 'pamigosController@verifica')->name('verifica_usuario');

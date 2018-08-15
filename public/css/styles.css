@@ -7,6 +7,14 @@ body, html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+    font-family: 'brandingmedium';
+    src: url('../fonts/branding-medium-webfont.woff2') format('woff2'),
+         url('../fonts/branding-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*Tiendas*/
 #btn-tiendas{
     bottom: 30px; 
@@ -22,11 +30,14 @@ body, html {
 }
 /*menu*/
 #menu{
-   top: 0px;
+
    z-index: 1; 
 }
 .background-white{
     background-color: rgba(255,255,255,.8);
+}
+.background-menu{
+    background-color: rgba(255,255,255,.95);
 }
 .text-idioma{
         text-align: right;
@@ -46,6 +57,47 @@ body, html {
     
 }
 
+.top-0{
+    top: 0px !important;
+}
+ .error{
+        color: red; 
+        font-weight: bold; 
+        padding-bottom: 5px;
+    }
+
+.input-error{
+    border: solid 1px red !important;
+}
+.btn-amigo{
+    background: #c80000;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.input-landing{
+    font-family: 'brandingmedium';
+    border: none;
+    border-radius: 0px;
+    padding: 15px;
+
+}
+
+.input-landing:focus{
+    box-shadow: none;
+}
+
+select.input-landing{
+    padding: 0px 15px;
+}
+
+input[type='email'].input-landing, input[type='text'].input-landing, select.input-landing {
+    background: rgba(255,255,255,.7);
+    color: black !important;
+}
+input[type='submit']{
+    width: 100%;
+}
 /*///////////////////////////////*//*Row Styles*/
 .row-masthead {
     position: fixed; 
@@ -330,10 +382,7 @@ input.email, textarea.mensaje {
 }
 
 .iPhone {
-    height: auto;
-    position: relative;
-    right: 70px;
-    top: 110px;
+    margin-bottom: -130px;
 }
 .padding-200{
     padding: 220px 0px;
@@ -497,11 +546,16 @@ input.input:focus{
 }
 
 
-
+.content{
+    height: 80%;
+}
 
 
 @media only screen and (max-width: 639px) {
 
+    .content{
+        height: 40%;
+    }
 
     .position-absolute-xs{
         position: absolute !important;
@@ -522,9 +576,7 @@ input.input:focus{
     .pb-1-xs{
         padding-bottom: 1em !important;
     }
-    .content{
-        margin-top: 240px;
-    }
+    
 
     .logo {
         padding: 20px;
@@ -618,10 +670,10 @@ input.input:focus{
 .size-13{
     font-size: 1.3rem;
 }
-    .iPhone {
+    /*.iPhone {
         height: 250px;
         top: 40px;
-    }
+    }*/
     .cs-skin-overlay .cs-options > ul {
     
     top: inherit !important;
@@ -652,11 +704,28 @@ input.input:focus{
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-     .iPhone {
-        height: 500px;
-        right: 0px;
-        top: 120px;
+     .w-iphone{
+        width: 40%;
     }
+    .iPhone {
+        margin-bottom: -100px;
+    }
+
+    .content{
+        height: 40%;
+    }
+
    
 
+}
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+
+     .w-iphone{
+        width: 40%;
+    }
+    .iPhone {
+        margin-bottom: -100px;
+    }
+
+   
 }

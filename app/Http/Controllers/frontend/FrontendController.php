@@ -14,7 +14,7 @@ class FrontendController extends Controller
     public function index(Request $request)
     {
     	
-    	//$paises = Paises::where('pais_active', 1)->get();
+    	$paises = Paises::where('pais_active', 1)->get();
 
     	//return view('frontend.index')->with('paises',$paises);
 
@@ -41,28 +41,12 @@ class FrontendController extends Controller
       }
        \Session::put('locale', $locale);
            //return redirect()->back();
+           
        
-      return view('frontend.index')->with('pais',$country)->with('region',$region)->with('ciudad',$city);
+      return view('frontend.index')->with('pais',$country)->with('region',$region)->with('ciudad',$city)->with('paises',$paises);
 
     }
 
-    public function recarga(Request $request){
-
-    	$pais = $request['pais'];
-    	$tel = $request['tel'];
-    	$valor = $request['valor'];
-
-    	dd($pais." ".$tel." ".$valor);
-    }
-
-    public function tarifas(Request $request){
-
-    	$pais = $request['pais'];
-
-    	$tarifas = Tarifas::where('tar_pais_cod', $pais)->first();
-
-    	return $tarifas;
-    }
 
 
 }

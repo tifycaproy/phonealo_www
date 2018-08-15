@@ -31,6 +31,67 @@
         </div>
     </div>
 </div>
+<div class="bg-white">
+    <div class="container">
+
+      <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulocomentario')}}</h1>
+        <div class="row pb-5">
+            
+          <div class=" col-12 col-sm-4" >
+            <img class="card-img-top" src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
+            <div class="card-body">
+              <i class="card-text">"{{trans('messages.comentario1')}}"</i>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-4" >
+            <img class="card-img-top" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
+            <div class="card-body">
+              <i class="card-text">"{{trans('messages.comentario2')}}"</i>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-4" >
+            <img class="card-img-top" src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
+            <div class="card-body">
+              <i class="card-text">"{{trans('messages.comentario3')}}"</i>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+<div class="" style="background: #F6F7FA">
+    <div class="container">
+
+      <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulopreguntas')}}</h1>
+        <div class="row pb-5">
+            
+          <div class=" col-12 col-sm-2 col-md-3" >
+            <div class="col-12">
+              <h2>{{trans('messages.pregunta1')}}</h2>
+              <p>{{trans('messages.respuesta1')}}</p>
+            </div>
+            
+          </div>
+          <div class=" col-12 col-sm-2 col-md-3" >
+            <h2>{{trans('messages.pregunta2')}}</h2>
+                <p>{{trans('messages.respuesta2')}}</p>
+          </div>
+          <div class=" col-12 col-sm-2 col-md-3" >
+            <h2>{{trans('messages.pregunta3')}}</h2>
+                <p>{{trans('messages.respuesta3')}}</p>
+          </div>
+          <div class=" col-12 col-sm-2 col-md-3" >
+           <h2>{{trans('messages.pregunta4')}}</h2>
+                <p>{{trans('messages.respuesta4')}} </p>
+          </div>
+          
+
+        </div>
+        <hr class="m-0">
+    </div>
+
+</div>
+ 
 
 @include('frontend.contacto')
 @endsection
@@ -50,6 +111,17 @@
                 'background-position': '0 -' + posicion + 'px'
             });
 
+            // if (barra > 30) {
+            //     $('#menu').addClass('fixed-top');
+            //     $('#menu').css('top':'0px');
+            //     $('.iPhone').css({'top':'120px'});
+               
+            // }else{
+            //      $('#menu').removeClass('fixed-top');
+            //     $('#menu').css('top':'30px');
+            //     $('.iPhone').css({'top':'70px'});
+            // }
+           
         });
 
 
@@ -59,115 +131,13 @@
             });
         }
 
-        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {    
-            new SelectFx(el, {
-                stickyPlaceholder: false
-            });
-        } );
 
-
-
-    });
-
-    SelectFx.prototype._changeOption = function() {
-
-        // if pre selected current (if we navigate with the keyboard)...
-        if( typeof this.preSelCurrent != 'undefined' && this.preSelCurrent !== -1 ) {
-            this.current = this.preSelCurrent;
-            this.preSelCurrent = -1;
-        }
-
-        // current option
-        var opt = this.selOpts[ this.current ];
-
-        // update current selected value
-        this.selPlaceholder.textContent = opt.textContent;
-        
-        // change native select element´s value
-        this.el.value = opt.getAttribute( 'data-value' );
-
-        // remove class cs-selected from old selected option and add it to current selected option
-        var oldOpt = this.selEl.querySelector( 'li.cs-selected' );
-        if( oldOpt ) {
-            classie.remove( oldOpt, 'cs-selected' );
-        }
-        classie.add( opt, 'cs-selected' );
-
-        // if there´s a link defined
-        if( opt.getAttribute( 'data-link' ) ) {
-            // open in new tab?
-            if( this.options.newTab ) {
-                window.open( opt.getAttribute( 'data-link' ), '_blank' );
-            }
-            else {
-                window.location = opt.getAttribute( 'data-link' );
-            }
-        }
-
-        // callback
-        this.options.onChange( this.el.value );
-
-        var pais = this.el.value;
-        //console.log(pais);
-
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-        $.ajax({
-            type: "GET",
-            url: '{{ url('tarifas') }}',
-            dataType: "json",
-            data: { pais: pais,_token: '{{csrf_token()}}' },
-            success: function (data){
-
-                //$('#tarifas').removeClass('display-none');
-
-                if (data.tar_currency == 'EUR') {
-                 $('.moneda').append('€'); 
-             }
-
-
-         }
-
-     });
-
-        $.get("https://ipinfo.io", function(response) {
-          console.log(response.ip, response.country);
+    $.get("https://ipinfo.io", function(response) {
+          //console.log(response.ip, response.country);
       }, "jsonp")
-    }
 
-
-    jQuery('img.svg').each(function(){
-        var $img = jQuery(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-
-        jQuery.get(imgURL, function(data) {
-                // Get the SVG tag, ignore the rest
-                var $svg = jQuery(data).find('svg');
-
-                // Add replaced image's ID to the new SVG
-                if(typeof imgID !== 'undefined') {
-                    $svg = $svg.attr('id', imgID);
-                }
-                // Add replaced image's classes to the new SVG
-                if(typeof imgClass !== 'undefined') {
-                    $svg = $svg.attr('class', imgClass+' replaced-svg');
-                }
-
-                // Remove any invalid XML tags as per http://validator.w3.org
-                $svg = $svg.removeAttr('xmlns:a');
-
-                // Replace image with new SVG
-                $img.replaceWith($svg);
-
-            }, 'xml');
 
     });
-    
 
 </script>
 

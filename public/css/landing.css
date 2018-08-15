@@ -17,14 +17,7 @@ p{
 
 }
 
-@font-face {
-    font-family: 'brandingmedium';
-    src: url('../fonts/branding-medium-webfont.woff2') format('woff2'),
-         url('../fonts/branding-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 .title-landing{
 	font-family: 'brandingbolditalic';
@@ -38,25 +31,7 @@ p{
 .margin-top{
 	margin-top: 3em;
 }
-.input-landing{
-	font-family: 'brandingmedium';
-	border: none;
-	border-radius: 0px;
-	padding: 15px;
 
-}
-
-.input-landing:focus{
-	box-shadow: none;
-}
-
-input[type='email'].input-landing, input[type='text'].input-landing {
-	background: rgba(255,255,255,.7);
-	color: black !important;
-}
-input[type='submit']{
-	width: 100%;
-}
 
 .z-indez-999{
 	z-index: 999
@@ -77,11 +52,7 @@ input[type='submit']{
 .cursor{
 	cursor: pointer !important;
 }
- .error{
-    	color: red; 
-    	font-weight: bold; 
-    	padding-bottom: 5px;
-    }
+
 
  .close-an{
  	color: white !important; 

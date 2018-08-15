@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" style="height: 100%">
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
@@ -49,7 +49,8 @@
         //]]>
         </script>
 </head>
-<body class="container-fluid " style="padding: 0px;">
+<body class="container-fluid" style="padding: 0px; height: 100%">
+    
     {{-- BOTONES DE TIENDAS --}}
     <div id="btn-tiendas" class="col-12 col-sm-2 position-fixed d-md-block d-none">
         <div class="row d-flex justify-content-center align-items-center">
@@ -107,20 +108,8 @@
     </div>
 
     {{-- MENU --}}
-    <div id="menu" class="col-12 position-fixed position-absolute-xs" >   
-        <div class="row d-flex justify-content-center justify-content-sm-between align-items-center background-white">
-            <div class="col-10 col-sm-2 pl-5 py-3 pl-1-xs" >
-                <img src="assets/logo.svg" class=" img-fluid"/>
-            </div>
-            <div class="col-12 col-sm-auto pb-1-xs pr-5 p-0-xs text-center">
-                {{-- <a href="" title="">ES</a> | <a href="" title="">EN</a>  --}}
-                    <a href="https://app.phonealo.net//balance" title="Ingresa">{{trans('messages.link3')}}</a> |
-                    <a href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
-                    <a href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
-                    
-            </div> 
-        </div> 
-    </div>
+
+   @include('frontend.layout.menu')
     {{--FIN MENU --}}
 
 
@@ -137,46 +126,12 @@
      @endif
 
     {{-- SLIDER --}}
-    {{-- PARA ASEGURAR EL AJUSTE DE LA IMAGENES VERIFIQUE QUE LAS IMAGENES POSEAN LAS MISMAS DIMENCIONES 1920 × 1279/ PUEDE AYUDARSE EMPLEADO EL ARCHIVO .PSD QUE SE ENCUENTRA EN PUBLIC/ASSETS/IMG.PSD --}}
-    <div id="carouselExampleSlidesOnly" class="carousel slide row-masthead col-12 p-0" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" >
-              <div class="position-absolute col-12 col-md-8 col-lg-6 p-5  p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
-                  <h2 class="c-white size-13" >{{trans('messages.layout1')}}</h2>
-                  <h3 class="c-white normal size-1"> {{trans('messages.layout2')}}</h3>
-              </div>  
-              <img class="d-block w-100" src="{{asset('assets/usa.png')}}" alt="">
-            </div>
-            <div class="carousel-item">
-                <div class="position-absolute col-12 col-md-8 col-lg-6 p-5 p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
-                    <h2 class="c-white size-13 ">{{trans('messages.layout3')}}</h2>  
-                    <h3 class="c-white normal size-1" >{{ trans('messages.layout4')}}</h3>
-                </div>
-              <img class="d-block w-100" src="{{asset('assets/ecuador.jpg')}}" alt="">
-            </div>
-            <div class="carousel-item">
-                <div class="position-absolute col-12 col-md-8 col-lg-6 p-5 p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
-                  <h2 class="c-white size-13 ">{{trans('messages.layout5')}}</h2>
-                  <h3 class="c-white normal  size-1">{{trans('messages.layout6')}}</h3>
-              </div>
-              <img class="d-block w-100" src="{{asset('assets/cuba.jpg')}}" alt="">
-            </div>
-        </div>
-    </div>
+   @include('frontend.layout.slider')
+    
     {{-- FIN SLIDER --}}
-    {{-- IPHONE --}}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-sm-12 col-lg-6">
-            </div>
-            <div class="col-md-2 d-md-block d-none">
-                <img src="assets/iPhone1.png" class="iPhone"/>
-            </div>
-        </div>
-    </div>
-    {{-- FIN IPHONE --}}
+
     {{-- CONTENEDOR --}}
-    <div class="pt-xs-1 pt-5 bg-white content">
+    <div class="pt-xs-1 pt-5 bg-white " >
         @yield('content')
     </div>
     {{-- FIN CONTENEDOR --}}
@@ -190,6 +145,8 @@
                     B-Duc Mircea Cel Batran H5, Targoviste, Romania
                     <br>
                     <b>Telefono: </b>+34 607333715
+                    <br>
+
                 </div>
                 <div class="col-12 mt-3-xs col-md-5 col-md-offset-1 col-sm-6">
                     <div class="row d-flex justify-content-center justify-content-sm-end ">
@@ -222,16 +179,21 @@
                     
                 </div>
             </div>
+            <hr>
+            <script language="JavaScript" type="text/javascript">
+                 TrustLogo("{{ asset('assets/comodo_secure_seal_76x26_transp.png') }}", "CL1", "none");
+               </script>
+            <a href="https://www.positivessl.com/" id="comodoTL"></a>
         </div>
+
     </div>
     {{-- FIN FOOTER --}}
 
+    @include('frontend.pamigo');
+
     <!--Scripts-->
-    <script language="JavaScript" type="text/javascript">
-       TrustLogo("http://www.phonealo.com/comodo_secure_seal_76x26_transp.png", "CL1", "none");
-   </script>
-   <a href="https://www.positivessl.com/" id="comodoTL">Positive SSL</a>
-    <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script>
+    
+    {{-- <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script> --}}
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/parallax.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>

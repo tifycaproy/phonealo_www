@@ -19,7 +19,9 @@ body, html {
     color: black !important;
 }
 .privacity{
-    padding-top: 3em;
+    padding: 3em 1em;
+    text-align: justify;
+
 }
 /*Tiendas*/
 #btn-tiendas{

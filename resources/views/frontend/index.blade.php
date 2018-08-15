@@ -2,7 +2,12 @@
 
 @section('title', 'Phonealo')
 
+@section('slider')
+@include('frontend.layout.slider')
+@endsection
+
 @section ('content')
+
 @include('frontend.recarga')
 
 <!--Full Width Image-->
@@ -37,26 +42,42 @@
       <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulocomentario')}}</h1>
         <div class="row pb-5">
             
-          <div class=" col-12 col-sm-4 text-center" >
-            <img class="card-img-top" src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
-            <div class="card-body">
+          <div class=" col-12 col-sm-4 text-center " >
+            <div class="row d-flex justify-content-center">
+              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
+              <img class="card-img-top" style="height: 100%; width: auto" src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
+            </div>
+            
+            <div class="card-body col-12">
               <i class="card-text">"{{trans('messages.comentario1')}}"</i>
             </div>
+            </div>
+            
           </div>
-          <div class=" col-12 col-sm-4 text-center" >
-            <img class="card-img-top" src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
-            <div class="card-body">
+          <div class=" col-12 col-sm-4 text-center " >
+            <div class="row d-flex justify-content-center">
+              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
+              <img class="card-img-top" style="height: 100%; width: auto" src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
+            </div>
+            
+            <div class="card-body col-12">
               <i class="card-text">"{{trans('messages.comentario3')}}"</i>
             </div>
+            </div>
+            
           </div>
-          <div class=" col-12 col-sm-4 text-center" >
-            <img class="card-img-top" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
-            <div class="card-body">
+          <div class=" col-12 col-sm-4 text-center " >
+            <div class="row d-flex justify-content-center">
+              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
+              <img class="card-img-top" style="height: 100%; width: auto" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
+            </div>
+            
+            <div class="card-body col-12">
               <i class="card-text">"{{trans('messages.comentario2')}}"</i>
             </div>
+            </div>
+            
           </div>
-          
-
         </div>
     </div>
 </div>
@@ -86,7 +107,8 @@
                 <p>{{trans('messages.respuesta4')}} </p>
           </div>
           
-
+          <div class="col-12 col-sm-9"></div>
+          <div class="col-12 col-sm-3 text-right"><a href="{{ route('questions') }}" title="">{{trans('messages.mas')}}</a></div>
         </div>
         <hr class="m-0">
     </div>
@@ -95,6 +117,7 @@
  
 
 @include('frontend.contacto')
+ @include('frontend.pamigo')
 @endsection
 
 @push('scripts')

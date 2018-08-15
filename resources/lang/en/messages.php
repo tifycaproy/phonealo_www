@@ -48,6 +48,7 @@ return[
   'Invite' => 'INVITE',
   'menuItem1' => 'Your Phonealo',
   'menuItem2' => 'Your Friend',
+  'mas' => 'More',
 
 ];
 

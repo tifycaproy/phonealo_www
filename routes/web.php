@@ -21,6 +21,10 @@ Route::post('contacto_submit', 'ContactoControler@contacto')->name('contacto_sub
 
 Route::get('tarifas', 'frontend\FrontendController@tarifas');
 
+Route::get('privacity', 'frontend\FrontendController@privacity');
+
+Route::get('questions', 'frontend\FrontendController@preguntas')->name('questions');
+
 //geolocalizacion
 Route::get('locale', function () {
     return \App::getLocale();

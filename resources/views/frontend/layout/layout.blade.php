@@ -126,7 +126,9 @@
      @endif
 
     {{-- SLIDER --}}
-   @include('frontend.layout.slider')
+
+    @yield('slider')
+   
     
     {{-- FIN SLIDER --}}
 

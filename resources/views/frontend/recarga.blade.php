@@ -18,7 +18,7 @@
              </select>
           </div>
           <div class="col-12 col-md-5 col-lg-4 justify-content-center d-flex align-items-center">
-            <input type="submit" class="btn btn-outline-danger btn-lg" value="Recarga">
+            <input type="submit" class="btn btn-outline-danger btn-lg" value="{{trans('messages.btn_recarga')}}">
           </div>
         </form>
       </div>

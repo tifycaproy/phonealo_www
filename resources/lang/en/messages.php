@@ -16,6 +16,7 @@ return[
   'esteno4' => '100',
   'esteno4' => '500',
   'recarga1' =>'¡Recharge now and Phonealo!',
+  'btn_recarga' => 'Recharge',
   'recarga2' => 'Select the Amount',
   'contacto1' =>'¡CONTACT!',
   'contacto2' =>'Phone',
@@ -36,6 +37,17 @@ return[
   'respuesta2' => "No, Phonealo's call is a call like the others. Your contact sees no difference in the call he receives.",
   'respuesta3' => 'In Phonealo you will pay for what you speak, charged for seconds. We do not round up the call time, if you speak 3 minutes with 35 seconds you will pay exactly this.',
   'respuesta4' => 'With Phonealo you will call from anywhere in the world without generating expenses for your operator. Remember it is important to be connected to a Wi-Fi network or otherwise if you consume data from your operator it is possible that this will be charged to you.',
+  'pamigotitulo' => 'Phone with your friends and earn minutes to enjoy even more',
+  'pamigoSuccess' => 'Successfully Saved.',
+  'pamigoError' => 'Error registering.',
+  'pamigoNoexiste' => 'Error registering', 
+  'pamigoTelefono' => 'Your telephone', 
+  'pamigoAmigo' => 'Your friend', 
+  'pamigoEmail' => 'Email from your friend', 
+  'pamigoPais' => "Your friend's country",
+  'Invite' => 'INVITE',
+  'menuItem1' => 'Your Phonealo',
+  'menuItem2' => 'Your Friend',
 
 ];
 

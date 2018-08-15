@@ -189,7 +189,7 @@
     </div>
     {{-- FIN FOOTER --}}
 
-    @include('frontend.pamigo');
+    @include('frontend.pamigo')
 
     <!--Scripts-->
     

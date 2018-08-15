@@ -9,7 +9,7 @@
     </div>
   </div>
   <div class="col-7 col-md-3 col-lg-2">
-    <img src="{{ asset('assets/logo.png') }}" class="img-fluid" alt="">
+   <a href="https://www.phonealo.com/" title=""> <img src="{{ asset('assets/logo.png') }}" class="img-fluid" alt=""></a>
   </div>
   <div class="p-3 text-right">
     

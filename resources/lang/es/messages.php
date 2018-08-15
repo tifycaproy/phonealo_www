@@ -48,7 +48,7 @@ return[
   'Invite' => 'INVITAR',
   'menuItem1' => 'Tu Phonealo',
   'menuItem2' => 'Tu Amigo',
-
+  'mas' => 'Ver más',
 
  
 

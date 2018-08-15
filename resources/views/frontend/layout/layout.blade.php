@@ -193,7 +193,7 @@
 
     <!--Scripts-->
     
-    {{-- <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script> --}}
+   {{--  <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script> --}}
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/parallax.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>

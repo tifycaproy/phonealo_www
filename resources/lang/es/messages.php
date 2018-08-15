@@ -16,6 +16,7 @@ return[
   'esteno4' => '100',
   'esteno4' => '500',
   'recarga1' =>'¡Recarga ahora y Phonealo!',
+  'btn_recarga' => 'Recargar',
   'recarga2' => 'Selecciona el Importe',
   'contacto1' =>'¡CONTACTA!',
   'contacto2' =>'Teléfono',
@@ -36,6 +37,21 @@ return[
   'respuesta2' => 'No, la llamada de Phonealo es una llamada como las demás. Tu contacto no ve ninguna diferencia en la llamada que recibe.',
   'respuesta3' => 'En Phonealo pagaras por lo que hablas, tarificado por segundos. No redondeamos el tiempo de llamada, si hablas 3 minutos con 35 segundos pagaras exactamente esto.',
   'respuesta4' => 'Con Phonealo llamaras desde cualquier parte del mundo sin generar gastos en tu operador. Recuerda es importante este conectado a una red wifi o de lo contrario si consumes datos de tu operador es possible que este te los tarifique.',
+  'pamigotitulo' => 'Phonealo con tus amigos y ganando minutos para disfrutar aun más',
+  'pamigoSuccess' => 'Registro Guardado Exitosamente',
+  'pamigoError' => 'Error al registrar.',
+  'pamigoNoexiste' => 'Usuario no Existe', 
+  'pamigoTelefono' => 'Tu Telefono', 
+  'pamigoAmigo' => 'Tu amigo', 
+  'pamigoEmail' => 'Email de tu amigo', 
+  'pamigoPais' => 'País de tu amigo', 
+  'Invite' => 'INVITAR',
+  'menuItem1' => 'Tu Phonealo',
+  'menuItem2' => 'Tu Amigo',
+
+
+ 
+
   
 ];
 

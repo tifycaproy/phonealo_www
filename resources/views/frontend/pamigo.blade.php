@@ -6,35 +6,33 @@
     <div class="modal-content p-3 p-md-5" style="background-image: url('assets/pamigobg.jpg'); background-repeat: no-repeat; background-size: cover;">
       <div class="row">
         <div class="col-12">
-          <h3 class>Phonealo con tus amigos y gana minutos para disfrutar aun más
+          <h3 class>
+            {{trans('messages.pamigotitulo')}}
           </h3>
         </div>
         <div class="col-12 col-lg-6"></div>
         <div class="col-12 col-lg-6">
-          <div id="momento" class="d-none">
-            Momentooooooooo
-          </div>
           <div id="success" class="col-12 p-3 mb-2 d-none text-center c-white" style="background: #32CD32">
-            Registro Guardado Exitosamente
+            {{trans('messages.pamigoSuccess')}}
           </div>
           <div id="erro" class="col-12 p-3 mb-2 d-none text-center c-white" style="background: #DC143C">
-            Error al registrar.
+           {{trans('messages.pamigoError')}} 
           </div>
           <form action="#" id="form_pamigo" method="post" accept-charset="utf-8" onsubmit="return false">
             <div class="row">
               <div class="form-group col-12">
-                <span id="error" class="d-none error "> Usuario no Existe</span>
-                <input type="text" class="form-control input-landing " name="referente" id="referente" placeholder="Tu Telefono"  required>
+                <span id="error" class="d-none error ">{{trans('messages.pamigoNoexiste')}} </span>
+                <input type="text" class="form-control input-landing " name="referente" id="referente" placeholder="{{trans('messages.pamigoTelefono')}}"  required>
               </div>
               <div class="form-group col-12">
-                <input type="text" class="form-control input-landing" name="nom_amigo" id="nom_amigo" placeholder="Nombre de tu amigo"  required>
+                <input type="text" class="form-control input-landing" name="nom_amigo" id="nom_amigo" placeholder="{{trans('messages.pamigoAmigo')}} "  required>
               </div>
               <div class="form-group col-12">
-                <input type="email" class="form-control input-landing" name="email_amigo" id="email_amigo" placeholder="Email de tu amigo"  required>
+                <input type="email" class="form-control input-landing" name="email_amigo" id="email_amigo" placeholder="{{trans('messages.pamigoEmail')}}"  required>
               </div>
               <div class="form-group col-12">
                 <select name="pais_amigo" id="pais_amigo" class="form-control input-landing" required>
-                  <option value="">País de tu amigo</option>
+                  <option value="">{{trans('messages.pamigoPais')}}</option>
                   @foreach ($paises as $pais)
                     <option value="{{ $pais->pais_cod }}">{{ $pais->pais_desc }}</option>
                   @endforeach
@@ -46,7 +44,7 @@
               <div class="form-group col-12  text-center">
                   <input name="_token" value="{{ csrf_token() }}" type="hidden"></input>
                   <button type="submit" id="enviar" class="btn btn-amigo input-landing col-12">
-                  <span id="invitar" class="">INVITAR</span>
+                  <span id="invitar" class="">{{trans('messages.Invite')}}</span>
                   <span id="loading" class="loading d-none">
                     <img src="{{ asset('assets/loading.gif') }}" class="col-3"  alt="">
                   </span>

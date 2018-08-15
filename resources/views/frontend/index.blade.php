@@ -37,24 +37,25 @@
       <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulocomentario')}}</h1>
         <div class="row pb-5">
             
-          <div class=" col-12 col-sm-4" >
+          <div class=" col-12 col-sm-4 text-center" >
             <img class="card-img-top" src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
             <div class="card-body">
               <i class="card-text">"{{trans('messages.comentario1')}}"</i>
             </div>
           </div>
-          <div class=" col-12 col-sm-4" >
-            <img class="card-img-top" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
-            <div class="card-body">
-              <i class="card-text">"{{trans('messages.comentario2')}}"</i>
-            </div>
-          </div>
-          <div class=" col-12 col-sm-4" >
+          <div class=" col-12 col-sm-4 text-center" >
             <img class="card-img-top" src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
             <div class="card-body">
               <i class="card-text">"{{trans('messages.comentario3')}}"</i>
             </div>
           </div>
+          <div class=" col-12 col-sm-4 text-center" >
+            <img class="card-img-top" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
+            <div class="card-body">
+              <i class="card-text">"{{trans('messages.comentario2')}}"</i>
+            </div>
+          </div>
+          
 
         </div>
     </div>

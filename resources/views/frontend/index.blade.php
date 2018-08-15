@@ -31,6 +31,67 @@
         </div>
     </div>
 </div>
+<div class="bg-white">
+    <div class="container">
+
+      <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulocomentario')}}</h1>
+        <div class="row pb-5">
+            
+          <div class=" col-12 col-sm-4" >
+            <img class="card-img-top" src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
+            <div class="card-body">
+              <i class="card-text">"{{trans('messages.comentario1')}}"</i>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-4" >
+            <img class="card-img-top" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
+            <div class="card-body">
+              <i class="card-text">"{{trans('messages.comentario2')}}"</i>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-4" >
+            <img class="card-img-top" src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
+            <div class="card-body">
+              <i class="card-text">"{{trans('messages.comentario3')}}"</i>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+<div class="" style="background: #F6F7FA">
+    <div class="container">
+
+      <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulopreguntas')}}</h1>
+        <div class="row pb-5">
+            
+          <div class=" col-12 col-sm-2 col-md-3" >
+            <div class="col-12">
+              <h2>{{trans('messages.pregunta1')}}</h2>
+              <p>{{trans('messages.respuesta1')}}</p>
+            </div>
+            
+          </div>
+          <div class=" col-12 col-sm-2 col-md-3" >
+            <h2>{{trans('messages.pregunta2')}}</h2>
+                <p>{{trans('messages.respuesta2')}}</p>
+          </div>
+          <div class=" col-12 col-sm-2 col-md-3" >
+            <h2>{{trans('messages.pregunta3')}}</h2>
+                <p>{{trans('messages.respuesta3')}}</p>
+          </div>
+          <div class=" col-12 col-sm-2 col-md-3" >
+           <h2>{{trans('messages.pregunta4')}}</h2>
+                <p>{{trans('messages.respuesta4')}} </p>
+          </div>
+          
+
+        </div>
+        <hr class="m-0">
+    </div>
+
+</div>
+ 
 
 @include('frontend.contacto')
 @endsection
@@ -50,14 +111,16 @@
                 'background-position': '0 -' + posicion + 'px'
             });
 
-            if (barra > 30) {
-                $('#menu').addClass('fixed-top');
-                $('.iPhone').css({'top':'120px'});
+            // if (barra > 30) {
+            //     $('#menu').addClass('fixed-top');
+            //     $('#menu').css('top':'0px');
+            //     $('.iPhone').css({'top':'120px'});
                
-            }else{
-                $('#menu').removeClass('fixed-top');
-                $('.iPhone').css({'top':'70px'});
-            }
+            // }else{
+            //      $('#menu').removeClass('fixed-top');
+            //     $('#menu').css('top':'30px');
+            //     $('.iPhone').css({'top':'70px'});
+            // }
            
         });
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" style="height: 100%">
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
@@ -49,7 +49,8 @@
         //]]>
         </script>
 </head>
-<body class="container-fluid " style="padding: 0px;">
+<body class="container-fluid" style="padding: 0px; height: 100%">
+    
     {{-- BOTONES DE TIENDAS --}}
     <div id="btn-tiendas" class="col-12 col-sm-2 position-fixed d-md-block d-none">
         <div class="row d-flex justify-content-center align-items-center">
@@ -108,36 +109,7 @@
 
     {{-- MENU --}}
 
-    <div class="col-12 c-white d-flex justify-content-between py-1" style="background: #192430; font-size: .8rem;  height: 30px">
-        <div>
-            <span>{{$pais}} - {{ $region }}, {{ $ciudad }}</span>  
-        </div>
-        <div>
-            <a class="c-white" href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |
-            <a class="c-white" href="{{url('locale/es')}}">{{trans('messages.link2')}}</a>
-        </div>
-        
-    </div>
-
-    <nav id="menu" class="navbar  navbar-expand-lg navbar-light background-menu" style="height: 80px">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand col-10 col-sm-2 pl-5  pl-1-xs" href="#"><img src="{{ asset('assets/logo.svg') }}" class=""/></a>
-
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="https://app.phonealo.net/balance">Tú Phonealo <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#pamigo">Tú Amigo</a>
-          </li>
-         
-        </ul>
-       
-      </div>
-    </nav>
+   @include('frontend.layout.menu')
     {{--FIN MENU --}}
 
 
@@ -154,45 +126,12 @@
      @endif
 
     {{-- SLIDER --}}
-    <div id="carouselExampleSlidesOnly" class="carousel slide row-masthead col-12 p-0" data-ride="carousel" style="top:0px">
-        <div class="carousel-inner">
-            <div class="carousel-item active" >
-              <div class="position-absolute col-12 col-md-8 col-lg-6 p-5  p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
-                  <h2 class="c-white size-13" >{{trans('messages.layout1')}}</h2>
-                  <h3 class="c-white normal size-1"> {{trans('messages.layout2')}}</h3>
-              </div>  
-              <img class="d-block w-100" src="{{asset('assets/usa.png')}}" alt="">
-            </div>
-            <div class="carousel-item">
-                <div class="position-absolute col-12 col-md-8 col-lg-6 p-5 p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
-                    <h2 class="c-white size-13 ">{{trans('messages.layout3')}}</h2>  
-                    <h3 class="c-white normal size-1" >{{ trans('messages.layout4')}}</h3>
-                </div>
-              <img class="d-block w-100" src="{{asset('assets/ecuador.jpg')}}" alt="">
-            </div>
-            <div class="carousel-item">
-                <div class="position-absolute col-12 col-md-8 col-lg-6 p-5 p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
-                  <h2 class="c-white size-13 ">{{trans('messages.layout5')}}</h2>
-                  <h3 class="c-white normal  size-1">{{trans('messages.layout6')}}</h3>
-              </div>
-              <img class="d-block w-100" src="{{asset('assets/cuba.jpg')}}" alt="">
-            </div>
-        </div>
-    </div>
+   @include('frontend.layout.slider')
+    
     {{-- FIN SLIDER --}}
-    {{-- IPHONE --}}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-sm-12 col-lg-6">
-            </div>
-            <div class="col-md-2 d-md-block d-none">
-                <img src="assets/iPhone1.png" class="iPhone"/>
-            </div>
-        </div>
-    </div>
-    {{-- FIN IPHONE --}}
+
     {{-- CONTENEDOR --}}
-    <div class="pt-xs-1 pt-5 bg-white content">
+    <div class="pt-xs-1 pt-5 bg-white " >
         @yield('content')
     </div>
     {{-- FIN CONTENEDOR --}}
@@ -240,18 +179,21 @@
                     
                 </div>
             </div>
+            <hr>
+            <script language="JavaScript" type="text/javascript">
+                 TrustLogo("{{ asset('assets/comodo_secure_seal_76x26_transp.png') }}", "CL1", "none");
+               </script>
+            <a href="https://www.positivessl.com/" id="comodoTL"></a>
         </div>
+
     </div>
     {{-- FIN FOOTER --}}
 
     @include('frontend.pamigo');
 
     <!--Scripts-->
-    <script language="JavaScript" type="text/javascript">
-      // TrustLogo("http://www.phonealo.com/comodo_secure_seal_76x26_transp.png", "CL1", "none");
-   </script>
-   <a href="https://www.positivessl.com/" id="comodoTL"></a>
-    <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script>
+    
+    {{-- <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script> --}}
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/parallax.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>

@@ -23,6 +23,20 @@ return[
   'link1' => 'EN',
   'link2' => 'ES',
   'link3' => 'Your Phonealo',
+  'comentario1' => 'Phonealo has helped me communicate with my family when I needed it the most. Thank you.',
+  'comentario2' => "There's nothing better, my daughters can talk to their grandmother whenever they want.",
+  'comentario3' => 'Excellent service, it helps me with my endeavors and professional achievements.',
+  'titulocomentario'=> 'Phonealo you too!',
+  'titulopreguntas' => 'Frequent questions',
+  'pregunta1' => 'Can I call any phone?',
+  'pregunta2' => 'Does the destination I call need Phonealo?',
+  'pregunta3' => 'How are calls charged?',
+  'pregunta4' => 'With Phonealo abroad?',
+  'respuesta1' => 'Yes, you can call any country in the world, provided it is not a destination with special rates, such as 902.',
+  'respuesta2' => "No, Phonealo's call is a call like the others. Your contact sees no difference in the call he receives.",
+  'respuesta3' => 'In Phonealo you will pay for what you speak, charged for seconds. We do not round up the call time, if you speak 3 minutes with 35 seconds you will pay exactly this.',
+  'respuesta4' => 'With Phonealo you will call from anywhere in the world without generating expenses for your operator. Remember it is important to be connected to a Wi-Fi network or otherwise if you consume data from your operator it is possible that this will be charged to you.',
+
 ];
 
 ?>

@@ -21,17 +21,19 @@ class pamigosController extends Controller
 
 		$referente = Usuarios::where('usu_mobile', $referente_form)->first();
 
+
+
 		if ($referente == NULL) {
-			//dd('no existe usuario, registrese primero');
-			$data = 0;
+
+			$datas = 0;
+
 		}else{
 
 			$validaAmigo = pamigos::where('usu_cod', $referente->usu_cod)->where('tel_amigo',$tel_amigo )->count();
 
-			if ($validaAmigo > 0) {
-				//dd('Ya invitaste a este amigo, invita a otro');
-				$data = 0;
-			}else{
+			if ($validaAmigo == 0) {
+		
+				
 				$amigo               = new pamigos();
 				$amigo->usu_cod      = $referente->usu_cod;
 				$amigo->pais_amigo   = $pais_amigo;
@@ -40,6 +42,7 @@ class pamigosController extends Controller
 				$amigo->tel_amigo    = $tel_amigo;
 				$amigo->save();
 
+				$datas = 1;
 				$data= [
 
 		                "email_amigo"         => $email_amigo,
@@ -47,12 +50,16 @@ class pamigosController extends Controller
 
 		        ];
 
-		        $data = 1;
+		       
 
 				 Mail::to($email_amigo)->send(new pamigosMail($data));
+				  
+
+			}else{
+				$datas = 0;
 			}
 
-			return $data;
+			return $datas;
 
 			
 		}

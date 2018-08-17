@@ -16,8 +16,8 @@
         <div class="row w-100">
             <div class="col-12 col-sm-12 col-md-12 col-lg-10  pl-2-xs">
 
-                <h1 class="title-h1">{{trans('messages.indice1')}}</h1>
-                <h2 class="c-white title-h2">{{trans('messages.indice2')}}</h2>
+                <h1 class="title-h1 c-black">{{trans('messages.indice1')}}</h1>
+                <h2 class=" title-h2">{{trans('messages.indice2')}}</h2>
 
             </div>
         </div>
@@ -129,11 +129,11 @@
 
         $(window).scroll(function(){
             var barra = $(window).scrollTop();
-            var posicion =  (barra * 0.05);
+            // var posicion =  (barra * 0.1);
             
-            $('.parallax').css({
-                'background-position': '0 -' + posicion + 'px'
-            });
+            // $('.parallax').css({
+            //     'background-position': '0 -' + posicion + 'px'
+            // });
 
             // if (barra > 30) {
             //     $('#menu').addClass('fixed-top');

@@ -1,7 +1,7 @@
 <nav id="menu" class="navbar p-0 fixed-top navbar-expand-lg d-flex justify-content-between navbar-light background-menu" style="flex-flow: wrap !important;">
   <div class="col-12 c-white d-flex justify-content-between py-1" style="background: #192430; font-size: .8rem;  height: 30px">
     <div>
-        <span>{{$pais}} - {{ $region }}, {{ $ciudad }}</span>  
+        <span>{{$pais}} - {{$region}}, {{$ciudad}}</span>  
     </div>
     <div>
         <a class="c-white" href="{{url('locale/en')}}">{{trans('messages.link1')}}</a> |

@@ -2,7 +2,7 @@
 
 @section('title', 'Phonealo')
 
-@section('img', 'background-image: url("assets/phonehand1.png");')
+@section('img', 'background-image: url("assets/cuba.jpg");')
 
 @section ('form')
 <div class="col-12">

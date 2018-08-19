@@ -157,43 +157,8 @@
         </div>
     </div>
 </div>
-<!-- FOOTER -->
-    <div class="row-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    2018 © Phonealo - ALL Rights Reserved.
-                    <br>
-                    B-Duc Mircea Cel Batran H5, Targoviste, Romania
-                </div>
-                <div class="col-12 mt-3-xs col-md-5 col-md-offset-1 col-sm-6">
-                    <div class="row d-flex justify-content-center justify-content-sm-end ">
-                        <div class="col-2">
-                            <a target="blank_" href="https://www.instagram.com/phonealo_app/" title="Instagram">
-                                <img src="{{ asset('assets/ig_circle.svg') }}" alt="">
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a target="blank_" href="https://www.facebook.com/Phonealo-642900916095975/?modal=admin_todo_tour" title="Facebook">
-                                <img src="{{ asset('assets/fb_circle.svg') }}" alt="">
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a target="blank_" href="#">
-                                <img src="{{ asset('assets/tw_circle.svg') }}" alt="@Phonealo1">
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a target="blank_" href="skype:phonealo app">
-                                <img src="{{ asset('assets/sk_circle.svg') }}" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- FOOTER -->
+    @include('frontend.layout.footer')
     {{-- FIN FOOTER --}}
 
 <!-- Modal -->

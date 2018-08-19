@@ -19,9 +19,8 @@ class pamigosController extends Controller
 		$tel_amigo 		= $request['num_amigo'];
 
 
+
 		$referente = Usuarios::where('usu_mobile', $referente_form)->first();
-
-
 
 		if ($referente == NULL) {
 
@@ -43,18 +42,10 @@ class pamigosController extends Controller
 				$amigo->save();
 
 				$datas = 1;
-				$data= [
+				
 
-		                "email_amigo"         => $email_amigo,
-		                "nombre_amigo"  => $nombre_amigo
-
-		        ];
-
-		       
-
-				 Mail::to($email_amigo)->send(new pamigosMail($data));
+				Mail::to($email_amigo)->send(new pamigosMail());
 				  
-
 			}else{
 				$datas = 0;
 			}

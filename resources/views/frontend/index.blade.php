@@ -39,13 +39,13 @@
 <div class="bg-white">
     <div class="container">
 
-      <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulocomentario')}}</h1>
+      <h1 class=" text-center py-5 title-h1" style="color: #c80000">{{trans('messages.titulocomentario')}}</h1>
         <div class="row pb-5">
             
           <div class=" col-12 col-sm-4 text-center " >
             <div class="row d-flex justify-content-center">
               <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
-              <img class="card-img-top" style="height: 100%; width: auto" src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
+              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
             </div>
             
             <div class="card-body col-12">
@@ -57,7 +57,7 @@
           <div class=" col-12 col-sm-4 text-center " >
             <div class="row d-flex justify-content-center">
               <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
-              <img class="card-img-top" style="height: 100%; width: auto" src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
+              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
             </div>
             
             <div class="card-body col-12">
@@ -69,7 +69,7 @@
           <div class=" col-12 col-sm-4 text-center " >
             <div class="row d-flex justify-content-center">
               <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
-              <img class="card-img-top" style="height: 100%; width: auto" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
+              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
             </div>
             
             <div class="card-body col-12">

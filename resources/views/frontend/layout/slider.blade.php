@@ -15,7 +15,7 @@
               <h2 class="c-white size-13 ">{{trans('messages.layout5')}}</h2>
               <h3 class="c-white normal  size-1">{{trans('messages.layout6')}}</h3>
           </div> --}}
-          <img class="d-block w-100" src="{{asset('assets/cuba.jpg')}}" alt="">
+          <img class="d-block w-100" src="{{asset('assets/cuba1.jpg')}}" alt="">
         </div>
 
         <div class="carousel-item">
@@ -24,6 +24,13 @@
                 <h3 class="c-white normal size-1" >{{ trans('messages.layout4')}}</h3>
             </div> --}}
           <img class="d-block w-100" src="{{asset('assets/ecuador.jpg')}}" alt="">
+        </div>
+        <div class="carousel-item">
+            {{-- <div class="position-absolute col-12 col-md-8 col-lg-6 p-5 p-1-sm ml-5 c-white background-black top-30 text-center invisible-xs">
+                <h2 class="c-white size-13 ">{{trans('messages.layout3')}}</h2>  
+                <h3 class="c-white normal size-1" >{{ trans('messages.layout4')}}</h3>
+            </div> --}}
+          <img class="d-block w-100" src="{{asset('assets/ecuador1.jpg')}}" alt="">
         </div>
       
         

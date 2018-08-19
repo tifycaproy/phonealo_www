@@ -190,7 +190,7 @@
 <!-- //////////////////////////////////////// -->
 <!-- IMAGEN 1 DE COMENTARIOS -->
   <div class="" style="width: 130px; height: 130px;  border-radius: 50%; overflow: hidden; ">
-    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important; margin: 0 0 0 -30px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail2.jpeg">
+    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important; margin: 0 0 0 -60px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail2.jpeg">
   </div>
   
 <!-- //////////////////////////////////////// -->
@@ -200,7 +200,7 @@
 <tr>
 <td width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif; text-align: left;"></td>
 </tr>
-            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal;">
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal; text-align: center;">
 
   <!-- //////////////////////////////////////// -->
   <!-- TEXTO 1 COMENTARIOS -->
@@ -225,7 +225,7 @@
   <!-- //////////////////////////////////////// -->
   <!-- IMAGEN 2 COMENTARIOS -->
   <div class="" style="width: 130px; height: 130px;  border-radius: 50%; overflow: hidden; ">
-    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important;  margin: 0 0 0 -30px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail4.jpeg">
+    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important;  margin: 0 0 0 -60px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail4.jpeg">
   </div>
   <!-- //////////////////////////////////////// -->
 
@@ -234,7 +234,7 @@
 <tr>
 <td width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif; text-align: left;"></td>
 </tr>
-<tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal;">
+<tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal; text-align: center;">
 
 
 <!-- //////////////////////////////////////// -->
@@ -260,7 +260,7 @@
   <!-- //////////////////////////////////////// -->
   <!-- IMAGEN 3 COMENTARIOS -->
    <div class="" style="width: 130px; height: 130px;  border-radius: 50%; overflow: hidden; ">
-    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important;  margin: 0 0 0 -30px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail3.jpeg">
+    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important;  margin: 0 0 0 -60px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail3.jpeg">
   </div>
 <!-- //////////////////////////////////////// -->
 
@@ -269,7 +269,7 @@
 <tr>
 <td width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif; text-align: left;"></td>
 </tr>
-<tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal;">
+<tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal; text-align: center;">
 
 
 <!-- //////////////////////////////////////// -->
@@ -351,6 +351,10 @@
       &nbsp;<a target="_new" href="https://www.phonealo.com/" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;"><img border="0" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; background: url(https://), #818181; border-radius: 50px;" src="http://app.phonealo.net/images/web-bw-96.png" width="32" height="32" alt="Web"></a>
       
       &nbsp;<a target="_new" href="https://www.instagram.com/phonealo_app/" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;"><img border="0" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; background: url(https://), #818181; border-radius: 50px;" src="http://app.phonealo.net/images/inst-bw-96.png" width="32" height="32" alt="Instagram"></a>
+
+       &nbsp;<a target="_new" href="https://t.me/phonealo" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;"><img border="0" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; background: url(https://), #818181; border-radius: 50px;" src="http://app.phonealo.net/images/tg.png" width="32" height="32" alt="Telegram"></a>
+
+        &nbsp;<a target="_new" href="skype:phonealo app" style="display: inline-block; color: #cccccc; color: #cccccc; text-decoration: underline;"><img border="0" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px; background: url(https://), #818181; border-radius: 50px;" src="http://app.phonealo.net/images/skype.png" width="32" height="32" alt="Skype"></a>
       <!-- //////////////////////////////////////// -->
 
 

@@ -8,14 +8,17 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Http\Request;
 
+
 class pamigosMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+   
+
     /**
      * Create a new message instance.
      *
-     * @return void
+     * @return Data $data
      */
     public function __construct()
     {
@@ -29,14 +32,23 @@ class pamigosMail extends Mailable
      */
     public function build(Request $request)
     {
-        $email_amigo = $request['email_amigo'];
-        $nombre_amigo = $request['nombre_amigo'];
+        $nom_amigo= $request['nom_amigo'];
+        $referente= $request['referente'];
+        $pais_amigo= $request['pais_amigo'];
+        $email_amigo= $request['email_amigo'];
+        $num_amigo= $request['num_amigo'];
+
+       //dd($amigo." ".$referente." ".$pais." ".$tela." ".$emailamigo);
 
         return $this->from('contact@phonealo.com')
                     ->view('frontend.mail.mailPamigo')
-                    ->with([
+                    ->with(
+                      [
+                            'nom_amigo' => $nom_amigo,
+                            'referente' => $referente,
+                            'pais_amigo' => $pais_amigo,
                             'email_amigo' => $email_amigo,
-                            'nombre_amigo' => $nombre_amigo
+                            'num_amigo' => $num_amigo,
                       ])
                     ->subject('¡Participa Conmigo!');  
     }

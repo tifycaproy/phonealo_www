@@ -55,12 +55,12 @@
     <div id="btn-tiendas" class="col-12 col-sm-2 position-fixed d-md-block d-none">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-4 col-sm-6">
-                <a href="" title="">
+                <a href="https://play.google.com/store/apps/details?id=com.phonealo" title="">
                     <img src="{{ asset('assets/btn_googleplay.svg') }}" alt="" class="img-fluid">
                 </a>
             </div>
             <div class="col-4 col-sm-6">
-                <a href="" title="">
+                <a href="https://itunes.apple.com/us/app/phonealo/id1425979442?l=es&ls=1&mt=8" title="">
                     <img src="{{ asset('assets/btn_appstore.svg') }}" alt="" class="img-fluid">
                 </a>
             </div>

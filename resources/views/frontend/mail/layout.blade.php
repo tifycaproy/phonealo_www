@@ -300,11 +300,11 @@
     <!-- //////////////////////////////////////// -->
     <!-- tiendas -->
     <p class="btn_recarga" style="display: inline-flex;">
-      <a style="margin: 3px" href="#">
+      <a style="margin: 3px" href="https://itunes.apple.com/us/app/phonealo/id1425979442?l=es&ls=1&mt=8">
         <img src="http://app.phonealo.net/images/btn_appstore.png" width="100px" alt="" />
       </a>
       
-      <a style="margin: 3px" href="#">
+      <a style="margin: 3px" href="https://play.google.com/store/apps/details?id=com.phonealo">
         <img src="http://app.phonealo.net/images/btn_googleplay.png" width="100px" alt="" />
       </a>     
         </p>

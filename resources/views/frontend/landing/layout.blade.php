@@ -65,15 +65,18 @@
                             <p class="conten-landing c-white pt-3">¡Phonealo!</p>
                         </div>
                     </div>
+
+                    <h3 class="c-white conten-landing text-center mt-3">¡Aprovecha nuestra oferta ahora! <br> Con tu primera recarga obtendrás el doble lo esperado. </h3>
+
                     {{-- BOTONES TIENDAS --}}
                     <div class="row mt-4 mb-5 mb-sm-3 mt-sm-5  d-flex justify-content-center align-items-center">
                         <div class="col-4 col-sm-3">
-                            <a href="" title="">
+                           <a href="https://play.google.com/store/apps/details?id=com.phonealo" title="">
                                 <img src="{{ asset('assets/btn_googleplay.svg') }}" alt="" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-4 col-sm-3">
-                            <a href="" title="">
+                            <a href="https://itunes.apple.com/us/app/phonealo/id1425979442?l=es&ls=1&mt=8" title="">
                                 <img src="{{ asset('assets/btn_appstore.svg') }}" alt="" class="img-fluid">
                             </a>
                         </div>
@@ -83,6 +86,7 @@
                 {{-- FIN PASOS --}}
             </div>
         </div>
+               
 
         
             <div id="verMas" class="cursor container position-absolute invisible-xs invisible-sm" style="bottom: 8px">
@@ -101,8 +105,8 @@
     <div class="container py-5">
         <div class="row">
             <div class="info col-12 col-sm-6 col-md-4 my-2">
-                <h2>¿EN QUÉ PAÍSES ESTÁ DISPONIBLE?</h2>
-                <p>En estos momentos, sólo puedes darte de alta con un número de móvil que pertenezcan al territorio español.</p>
+                <h2>¿En qué paises está disponible?</h2>
+                <p>Está disponible en todos los paises.</p>
             </div>
             <div class="info col-12 col-sm-6 col-md-4 my-2">
                 <h2>¿Necesito internet en mi móvil?</h2>

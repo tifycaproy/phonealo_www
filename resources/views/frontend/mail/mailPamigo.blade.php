@@ -6,10 +6,15 @@ Hola {{ $nom_amigo }}
 @endsection
 @section ('block1')
 
-Tu amigo 
-<h1>Este es el email que le llega al Amigo que invite automaticamente.</h1>
-<h2>Hay que poner un texto promocional o imagen o algo asi más adelante.</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id magnam rem nulla doloribus beatae. Necessitatibus corrupti sunt quis! Sunt necessitatibus et perferendis nihil doloribus deleniti, nemo tempore rem? Iusto, nisi!</p>
+Tu amigo [[usu_name]] te ha inivtado a que pruebes nuestra app.
+
+Descargala ahora y con tu primera recarga recibe el doble del importe. 
+
+Phonealo es la unica app que hace recarga doble. 
+
+ <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;"><strong>IMPORTANTE !!!</strong> Tu saldo <strong>nunca caduca</strong>, y el pago lo haces directamente en nuestro banco, <strong>no guardamos</strong> tus tarjetas de cr&eacute;dito/debito y nunca te pediremos estos datos por correo</p>
+
+ <p style="margin: 1em 0px; margin-top: 0px;">En <a href="https://www.phonealo.com/" target="_blank" rel="noopener noreferrer" style="color: #3f3f3f; color: #3f3f3f; text-decoration: underline;">www.phonealo.com</a> puedes<a href="https://app.phonealo.net/payment/init" target="_blank" rel="noopener noreferrer" style="color: #3f3f3f; color: #3f3f3f; text-decoration: underline;"> recargar</a> directamente el saldo de la aplicaci&oacute;n y tambi&eacute;n podr&aacute;s <a href="https://app.phonealo.net/balance" target="_blank" rel="noopener noreferrer" style="color: #3f3f3f; color: #3f3f3f; text-decoration: underline;">consultar todas tus llamadas realizadas.</a></p>
 
 
 @endsection

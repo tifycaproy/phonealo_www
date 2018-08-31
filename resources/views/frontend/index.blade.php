@@ -26,16 +26,18 @@
 
 <div class="row-green">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-10  pl-2-xs">
-                <h2>{{trans('messages.indice3')}}</h2>
-                <h3>{{trans('messages.indice4')}}</h3>
-
-            </div>
-
+        <div class="row d-flex align-items-center justify-content-center py-2 py-sm-5">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6  pl-2-xs">
+              <h2>{{trans('messages.indice3')}}</h2>
+              <h3>{{trans('messages.indice4')}}</h3>
+          </div>
+          <div class="col-12 col-md-6  text-center mt-3 mt-sm-0 ">
+            <iframe  src="https://www.youtube.com/embed/zY83HOW_458?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video-youtube"></iframe>
+          </div>
         </div>
     </div>
 </div>
+
 <div class="bg-white">
     <div class="container">
 
@@ -191,6 +193,14 @@ function mostrarError(error) {
   var errores = {1: 'Permiso denegado', 2: 'Posición no disponible', 3: 'Expiró el tiempo de respuesta'};
   //alert("Error: " + errores[error.code]);
 }
+
+        // $(function () {
+        //     $('#verMas').bind("click", function () {
+        //         var dest = $("#one").offset().top;
+        //         $("html, body").animate({scrollTop: dest},1000);
+        //     });
+
+        // });
 
 </script>
 

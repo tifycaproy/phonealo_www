@@ -210,50 +210,50 @@ $(document).ready(function(){
     // FIN VALIDACION DE USUARIO
     // //////////////////
     //ALMACENA LOS DATOS
-    $("#form_pamigo").submit(function(){
-      $('#loading').removeClass('d-none');
-      $('#invitar').addClass('d-none');
+    // $("#form_pamigo").submit(function(){
+    //   $('#loading').removeClass('d-none');
+    //   $('#invitar').addClass('d-none');
 
-    var referente = $("input#referente").val();
-    var nom_amigo = $('input#nom_amigo').val();
-    var email_amigo = $('input#email_amigo').val();
-    var pais_amigo = $('#pais_amigo').val();
-    var num_amigo = $('input#num_amigo').val();
+    // var referente = $("input#referente").val();
+    // var nom_amigo = $('input#nom_amigo').val();
+    // var email_amigo = $('input#email_amigo').val();
+    // var pais_amigo = $('#pais_amigo').val();
+    // var num_amigo = $('input#num_amigo').val();
 
-        //FIN VALIDACION EMAIL
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-        $.ajax({
-            type: "post",
-            url: '{{ route('registroAmigo') }}',
-            dataType: "json",
-            data: { referente:referente,nom_amigo:nom_amigo, email_amigo:email_amigo,pais_amigo:pais_amigo,num_amigo:num_amigo,_token: '{{csrf_token()}}' },
-            success: function (data){
+    //     //FIN VALIDACION EMAIL
+    //     $.ajaxSetup({
+    //         headers: {
+    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //         }
+    //     });
+    //     $.ajax({
+    //         type: "post",
+    //         url: '{{ route('registroAmigo') }}',
+    //         dataType: "json",
+    //         data: { referente:referente,nom_amigo:nom_amigo, email_amigo:email_amigo,pais_amigo:pais_amigo,num_amigo:num_amigo,_token: '{{csrf_token()}}' },
+    //         success: function (data){
 
                 
 
-              if (data == 1) {
-                $('#success').removeClass('d-none');
-                $('#erro').addClass('d-none');
-                $('#loading').addClass('d-none');
-                $('#invitar').removeClass('d-none');
-              }
+    //           if (data == 1) {
+    //             $('#success').removeClass('d-none');
+    //             $('#erro').addClass('d-none');
+    //             $('#loading').addClass('d-none');
+    //             $('#invitar').removeClass('d-none');
+    //           }
 
-              if (data == 0) {
-                $('#erro').removeClass('d-none');
-                $('#success').addClass('d-none');
-                $('#loading').addClass('d-none');
-                $('#invitar').removeClass('d-none');
+    //           if (data == 0) {
+    //             $('#erro').removeClass('d-none');
+    //             $('#success').addClass('d-none');
+    //             $('#loading').addClass('d-none');
+    //             $('#invitar').removeClass('d-none');
                 
-              }
+    //           }
 
-            }
+    //         }
 
-        });
-    });
+    //     });
+    // });
     //FIN ALMACENAR DATOS
 </script>
 

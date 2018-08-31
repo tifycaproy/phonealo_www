@@ -15,6 +15,14 @@ body, html {
     font-style: normal;
 
 }
+.privacity p, .privacity h3 {
+    color: black !important;
+}
+.privacity{
+    padding: 3em 1em;
+    text-align: justify;
+
+}
 /*Tiendas*/
 #btn-tiendas{
     bottom: 30px; 

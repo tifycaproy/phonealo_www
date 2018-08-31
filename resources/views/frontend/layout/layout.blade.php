@@ -55,12 +55,12 @@
     <div id="btn-tiendas" class="col-12 col-sm-2 position-fixed d-md-block d-none">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-4 col-sm-6">
-                <a href="" title="">
+                <a href="https://play.google.com/store/apps/details?id=com.phonealo" title="">
                     <img src="{{ asset('assets/btn_googleplay.svg') }}" alt="" class="img-fluid">
                 </a>
             </div>
             <div class="col-4 col-sm-6">
-                <a href="" title="">
+                <a href="https://itunes.apple.com/us/app/phonealo/id1425979442?l=es&ls=1&mt=8" title="">
                     <img src="{{ asset('assets/btn_appstore.svg') }}" alt="" class="img-fluid">
                 </a>
             </div>
@@ -126,7 +126,9 @@
      @endif
 
     {{-- SLIDER --}}
-   @include('frontend.layout.slider')
+
+    @yield('slider')
+   
     
     {{-- FIN SLIDER --}}
 
@@ -136,57 +138,7 @@
     </div>
     {{-- FIN CONTENEDOR --}}
     <!-- FOOTER -->
-    <div class="row-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    2018 © Phonealo - ALL Rights Reserved.
-                    <br>
-                    B-Duc Mircea Cel Batran H5, Targoviste, Romania
-                    <br>
-                    <b>Telefono: </b>+34 607333715
-                    <br>
-
-                </div>
-                <div class="col-12 mt-3-xs col-md-5 col-md-offset-1 col-sm-6">
-                    <div class="row d-flex justify-content-center justify-content-sm-end ">
-                        <div class="col-2">
-                            <a target="blank_" href="https://www.instagram.com/phonealo_app/" title="Instagram">
-                                <img src="{{ asset('assets/ig_circle.svg') }}" alt="">
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a target="blank_" href="https://www.facebook.com/Phonealo-642900916095975/?modal=admin_todo_tour" title="Facebook">
-                                <img src="{{ asset('assets/fb_circle.svg') }}" alt="">
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a target="blank_" href="#">
-                                <img src="{{ asset('assets/tw_circle.svg') }}" alt="@Phonealo1">
-                            </a>
-                        </div>
-                        <div class="col-2">
-                            <a target="blank_" href="skype:phonealo app">
-                                <img src="{{ asset('assets/sk_circle.svg') }}" alt="">
-                            </a>
-                        </div>
-                         <div class="col-2">
-                            <a target="blank_" href="https://t.me/phonealo">
-                                <img src="{{asset('assets/tg_circle.png')}}" alt=""  class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <hr>
-            <script language="JavaScript" type="text/javascript">
-                 TrustLogo("{{ asset('assets/comodo_secure_seal_76x26_transp.png') }}", "CL1", "none");
-               </script>
-            <a href="https://www.positivessl.com/" id="comodoTL"></a>
-        </div>
-
-    </div>
+    @include('frontend.layout.footer')
     {{-- FIN FOOTER --}}
 
     @include('frontend.pamigo')
@@ -197,7 +149,113 @@
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/parallax.min.js')}}"></script>
     <script src="{{asset('js/bootstrap.js')}}"></script>
-    
+    <script  type="text/javascript" charset="utf-8">
+
+
+{{-- NO PERMITE ESCRIBIR LETRAS EN LOS CAMPOS DE TELEFONOS --}}
+$(document).ready(function(){ 
+  $("input#referente, input#num_amigo").keydown(function(event) {
+     if(event.shiftKey)
+     {
+          event.preventDefault();
+     }
+
+     if (event.keyCode == 46 || event.keyCode == 8)    {
+     }
+     else {
+          if (event.keyCode < 95) {
+            if (event.keyCode < 48 || event.keyCode > 57) {
+                  event.preventDefault();
+            }
+          } 
+          else {
+                if (event.keyCode < 96 || event.keyCode > 105) {
+                    event.preventDefault();
+                }
+          }
+        }
+     });
+  });
+/////////
+
+   //VALIDA USUARIO AL TERMINAR DE ESCRIBIR EL NUMERO
+        $("input#referente").change(function(){
+
+          var referente = $("input#referente").val();
+
+           $.ajax({
+                type: "get",
+                url: '{{ route('verifica_usuario') }}',
+                dataType: "json",
+                data: { referente: referente },
+                success: function (data){
+
+                    if (data > 0) {
+                        $('#enviar').prop('disabled', false);  
+                      $('#error').addClass('d-none'); 
+                      $("input#referente").removeClass('input-error');
+
+
+                    }else{
+                    
+                      $('#enviar').prop('disabled', true);
+                      $('#error').removeClass('d-none');
+                      $("input#referente").addClass('input-error');
+                    }
+                }
+
+            });
+
+        });
+    // FIN VALIDACION DE USUARIO
+    // //////////////////
+    //ALMACENA LOS DATOS
+    $("#form_pamigo").submit(function(){
+      $('#loading').removeClass('d-none');
+      $('#invitar').addClass('d-none');
+
+    var referente = $("input#referente").val();
+    var nom_amigo = $('input#nom_amigo').val();
+    var email_amigo = $('input#email_amigo').val();
+    var pais_amigo = $('#pais_amigo').val();
+    var num_amigo = $('input#num_amigo').val();
+
+        //FIN VALIDACION EMAIL
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $.ajax({
+            type: "post",
+            url: '{{ route('registroAmigo') }}',
+            dataType: "json",
+            data: { referente:referente,nom_amigo:nom_amigo, email_amigo:email_amigo,pais_amigo:pais_amigo,num_amigo:num_amigo,_token: '{{csrf_token()}}' },
+            success: function (data){
+
+                
+
+              if (data == 1) {
+                $('#success').removeClass('d-none');
+                $('#erro').addClass('d-none');
+                $('#loading').addClass('d-none');
+                $('#invitar').removeClass('d-none');
+              }
+
+              if (data == 0) {
+                $('#erro').removeClass('d-none');
+                $('#success').addClass('d-none');
+                $('#loading').addClass('d-none');
+                $('#invitar').removeClass('d-none');
+                
+              }
+
+            }
+
+        });
+    });
+    //FIN ALMACENAR DATOS
+</script>
 
 @stack('scripts') 
 

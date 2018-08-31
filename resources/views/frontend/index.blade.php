@@ -2,7 +2,12 @@
 
 @section('title', 'Phonealo')
 
+@section('slider')
+@include('frontend.layout.slider')
+@endsection
+
 @section ('content')
+
 @include('frontend.recarga')
 
 <!--Full Width Image-->
@@ -11,8 +16,8 @@
         <div class="row w-100">
             <div class="col-12 col-sm-12 col-md-12 col-lg-10  pl-2-xs">
 
-                <h1 class="title-h1">{{trans('messages.indice1')}}</h1>
-                <h2 class="c-white title-h2">{{trans('messages.indice2')}}</h2>
+                <h1 class="title-h1 c-black">{{trans('messages.indice1')}}</h1>
+                <h2 class=" title-h2">{{trans('messages.indice2')}}</h2>
 
             </div>
         </div>
@@ -34,29 +39,45 @@
 <div class="bg-white">
     <div class="container">
 
-      <h1 class="c-black text-center py-5 title-h1">{{trans('messages.titulocomentario')}}</h1>
+      <h1 class=" text-center py-5 title-h1" style="color: #c80000">{{trans('messages.titulocomentario')}}</h1>
         <div class="row pb-5">
             
-          <div class=" col-12 col-sm-4 text-center" >
-            <img class="card-img-top" src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
-            <div class="card-body">
+          <div class=" col-12 col-sm-4 text-center " >
+            <div class="row d-flex justify-content-center">
+              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
+              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
+            </div>
+            
+            <div class="card-body col-12">
               <i class="card-text">"{{trans('messages.comentario1')}}"</i>
             </div>
+            </div>
+            
           </div>
-          <div class=" col-12 col-sm-4 text-center" >
-            <img class="card-img-top" src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
-            <div class="card-body">
+          <div class=" col-12 col-sm-4 text-center " >
+            <div class="row d-flex justify-content-center">
+              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
+              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
+            </div>
+            
+            <div class="card-body col-12">
               <i class="card-text">"{{trans('messages.comentario3')}}"</i>
             </div>
+            </div>
+            
           </div>
-          <div class=" col-12 col-sm-4 text-center" >
-            <img class="card-img-top" src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
-            <div class="card-body">
+          <div class=" col-12 col-sm-4 text-center " >
+            <div class="row d-flex justify-content-center">
+              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
+              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
+            </div>
+            
+            <div class="card-body col-12">
               <i class="card-text">"{{trans('messages.comentario2')}}"</i>
             </div>
+            </div>
+            
           </div>
-          
-
         </div>
     </div>
 </div>
@@ -86,7 +107,8 @@
                 <p>{{trans('messages.respuesta4')}} </p>
           </div>
           
-
+          <div class="col-12 col-sm-9"></div>
+          <div class="col-12 col-sm-3 text-right"><a href="{{ route('questions') }}" title="">{{trans('messages.mas')}}</a></div>
         </div>
         <hr class="m-0">
     </div>
@@ -95,6 +117,7 @@
  
 
 @include('frontend.contacto')
+ @include('frontend.pamigo')
 @endsection
 
 @push('scripts')
@@ -106,11 +129,11 @@
 
         $(window).scroll(function(){
             var barra = $(window).scrollTop();
-            var posicion =  (barra * 0.05);
+            // var posicion =  (barra * 0.1);
             
-            $('.parallax').css({
-                'background-position': '0 -' + posicion + 'px'
-            });
+            // $('.parallax').css({
+            //     'background-position': '0 -' + posicion + 'px'
+            // });
 
             // if (barra > 30) {
             //     $('#menu').addClass('fixed-top');

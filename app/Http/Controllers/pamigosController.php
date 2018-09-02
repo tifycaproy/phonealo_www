@@ -41,10 +41,36 @@ class pamigosController extends Controller
 				$amigo->tel_amigo    = $tel_amigo;
 				$amigo->save();
 
-				$datas = 1;
+				
 				
 
 				Mail::to($email_amigo)->send(new pamigosMail());
+
+			// echo	$sms_path = fullpath('api.smsarena.es/http/sms.php', array (
+			// 	          'auth_key' => 'dLVik8N5OGgFYlOR219aZqlFE9pFXsv0',
+			// 	          'from' => 'Phonealo',
+			// 	          'to' => '0034619097022042',
+			// 	          'text' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
+			// 	          'id' => time()
+			// 	      ), 'https');
+
+			// echo $envio = file_get_contents($sms_path);
+
+			//         if (strpos($envio, 'ERROR') > 0) {
+			//         echo    $sms_path = fullpath('services.premiumnumbers.es:8080/push/sendPush', array (
+			//                 'idCliente' => 81,
+			//                 'clave' => 'b1gi6g14t8584ro',
+			//                 'remitente' => 'Phonealo',
+			//                 'destinatarios' => '0034619097022042',
+			//                 'texto' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
+			//                 'ruta' => 5,
+			//                 'alfabeto' => 0
+			//             ));
+
+			//             getapi($sms_path);
+			//         }
+
+			        $datas = 1;
 				  
 			}else{
 				$datas = 0;

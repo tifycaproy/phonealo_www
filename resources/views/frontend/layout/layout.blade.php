@@ -207,9 +207,9 @@ $(document).ready(function(){
             });
 
         });
-    // FIN VALIDACION DE USUARIO
-    // //////////////////
-    //ALMACENA LOS DATOS
+   // FIN VALIDACION DE USUARIO
+    //////////////////
+  //  ALMACENA LOS DATOS
     $("#form_pamigo").submit(function(){
       $('#loading').removeClass('d-none');
       $('#invitar').addClass('d-none');

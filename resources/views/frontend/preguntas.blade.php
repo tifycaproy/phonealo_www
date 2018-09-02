@@ -10,8 +10,8 @@
 <div class="container py-5">
         <div class="row">
             <div class="info col-12 col-sm-6 col-md-4 my-2">
-                <h2>¿EN QUÉ PAÍSES ESTÁ DISPONIBLE?</h2>
-                <p>En estos momentos, sólo puedes darte de alta con un número de móvil que pertenezcan al territorio español.</p>
+                <h2>¿En quê paises está disponible?</h2>
+                <p>Está disponible en todos los paises.</p>
             </div>
             <div class="info col-12 col-sm-6 col-md-4 my-2">
                 <h2>¿Necesito internet en mi móvil?</h2>

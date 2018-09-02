@@ -24,18 +24,20 @@
     </div>
 </div>
 
-<div class="row-green">
+<div class="row-green" id="quees">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-10  pl-2-xs">
-                <h2>{{trans('messages.indice3')}}</h2>
-                <h3>{{trans('messages.indice4')}}</h3>
-
-            </div>
-
+        <div class="row d-flex align-items-center justify-content-center py-2 py-sm-5">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6  pl-2-xs">
+              <h2>{{trans('messages.indice3')}}</h2>
+              <h3>{{trans('messages.indice4')}}</h3>
+          </div>
+          <div class="col-12 col-md-6  text-center mt-3 mt-sm-0 ">
+            <iframe  src="https://www.youtube.com/embed/zY83HOW_458?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video-youtube"></iframe>
+          </div>
         </div>
     </div>
 </div>
+
 <div class="bg-white">
     <div class="container">
 
@@ -190,6 +192,90 @@ function mostrarCoordenadas(position) {
 function mostrarError(error) {
   var errores = {1: 'Permiso denegado', 2: 'Posición no disponible', 3: 'Expiró el tiempo de respuesta'};
   //alert("Error: " + errores[error.code]);
+}
+
+
+         $(function () {
+            $('#que').bind("click", function () {
+                var dest = $("#quees").offset().top - 150;
+                $("html, body").animate({scrollTop: dest},1000);
+            });
+
+        });
+
+
+
+// TARIFAS
+
+$(function(){
+  $('#input-tarifas').keyup(function(event) {
+    var input_pais = $(this).val();
+    if (input_pais.length > 0) {
+   
+      
+      $('#content-tarifa').addClass('d-none');
+      $("#tbody-pais").html(''); 
+
+        $.ajax({
+            type: "get",
+            url: '{{ route('trae_paises') }}',
+            dataType: "json",
+            data: { pais: input_pais },
+            success: function (data){
+
+              if (data.length == 0) {
+                $('#content-pais').addClass('d-none');
+              }else{
+                $('#content-pais').removeClass('d-none');
+
+                $.each(data, function(l, item) {
+                  $("#tbody-pais").append('<tr id="pais" onclick="captura(this)" data-value="'+item.pais_country_prefix+'" ><td>'+item.pais_desc+'</td></tr>');
+                });
+
+              }
+
+              
+            }
+
+        });
+    } else{
+      //console.log('vacio');
+      $('#content-pais').addClass('d-none');
+      $('#content-tarifa').addClass('d-none');
+    }
+    
+  });
+
+  
+});
+
+function captura(elemento){
+    var value = $(elemento).data('value');
+
+    $('#input-tarifas').val('');
+    
+    $('#content-pais').addClass('d-none');
+    $('#content-tarifa').removeClass('d-none');
+
+      $.ajax({
+          type: "get",
+          url: '{{ route('trae_tarifa') }}',
+          dataType: "json",
+          data: { value: value },
+          success: function (data){
+
+             $('.nombre_pais').html(data.pais+' ('+data.cod+') ');
+
+             $('#monto_tarifa').html(data.tarifa+'€');
+
+             $('#recarga_tarifa').html('<a href="https://app.phonealo.net/payment/init?amount=10&country='+value+'" class="btn" style="background: white; color: #c80000">{{trans('messages.btn_tarifas')}}</a>');
+
+
+          }
+
+      });
+
+
 }
 
 </script>

@@ -47,3 +47,13 @@ Route::get('verifica_email', 'landingController@verifica')->name('verifica_email
 
 Route::post('registroAmigo', 'pamigosController@registroAmigo')->name('registroAmigo');
 Route::get('verifica_usuario', 'pamigosController@verifica')->name('verifica_usuario');
+
+// Route::get('email', function(){
+// 	return view('frontend.mail.mailPamigo');
+// });
+
+//TARIFAS
+
+Route::get('trae_paises', 'tarifasController@paises')->name('trae_paises');
+
+Route::get('trae_tarifa', 'tarifasController@tarifa')->name('trae_tarifa');

@@ -38,7 +38,7 @@ return[
   'respuesta3' => 'In Phonealo you will pay for what you speak, charged for seconds. We do not round up the call time, if you speak 3 minutes with 35 seconds you will pay exactly this.',
   'respuesta4' => 'With Phonealo you will call from anywhere in the world without generating expenses for your operator. Remember it is important to be connected to a Wi-Fi network or otherwise if you consume data from your operator it is possible that this will be charged to you.',
   'pamigotitulo' => 'Phone with your friends and earn minutes to enjoy even more',
-  'pamigoSuccess' => 'Successfully Saved.',
+  'pamigoSuccess' => 'Thanks for the recommendation.',
   'pamigoError' => 'Error registering.',
   'pamigoNoexiste' => 'Error registering', 
   'pamigoTelefono' => 'Your telephone', 
@@ -48,6 +48,14 @@ return[
   'Invite' => 'INVITE',
   'menuItem1' => 'Your Phonealo',
   'menuItem2' => 'Your Friend',
+  'menuItem3' => 'What is Phonealo?',
+
+  'tarifasTitulo' => 'Know the rates of Phonealo',
+  'tarifasPlaceholder' =>'What country do you want to call?',
+  'textoTarifas1' => 'Call everything you want to any phone',
+  'textoTarifas2' => 'and cancel only what you speak.',
+  'btn_tarifas' => 'Refill Now',
+ 
   'mas' => 'More',
   'privacity' => "<h2> Privacy Policy </h2>
    <p> We, Apel Global GSMA, S.R.L., residing at B-Duc Mircea Cel Batran H5, Targoviste, Romania, together with our subsidiaries, are committed to protecting your personal information and respecting your privacy. In this Privacy Policy we describe how we collect and process your personal information. The Privacy Policy also establishes the rights you have with respect to us and how to exercise them. </p>

@@ -24,7 +24,7 @@ class pamigosController extends Controller
 
 		if ($referente == NULL) {
 
-			$datas = 'no 1';
+			$datas = 0;
 
 		}else{
 
@@ -46,34 +46,34 @@ class pamigosController extends Controller
 
 				Mail::to($email_amigo)->send(new pamigosMail());
 
-				$sms_path = fullpath('api.smsarena.es/http/sms.php', array (
-				          'auth_key' => 'dLVik8N5OGgFYlOR219aZqlFE9pFXsv0',
-				          'from' => 'Phonealo',
-				          'to' => $this->$pais_amigo.$this->$tel_amigo,
-				          'text' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
-				          'id' => time()
-				      ), 'https');
+			// echo	$sms_path = fullpath('api.smsarena.es/http/sms.php', array (
+			// 	          'auth_key' => 'dLVik8N5OGgFYlOR219aZqlFE9pFXsv0',
+			// 	          'from' => 'Phonealo',
+			// 	          'to' => '0034619097022042',
+			// 	          'text' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
+			// 	          'id' => time()
+			// 	      ), 'https');
 
-				$envio = file_get_contents($sms_path);
+			// echo $envio = file_get_contents($sms_path);
 
-			        if (strpos($envio, 'ERROR') > 0) {
-			            $sms_path = fullpath('services.premiumnumbers.es:8080/push/sendPush', array (
-			                'idCliente' => 81,
-			                'clave' => 'b1gi6g14t8584ro',
-			                'remitente' => 'Phonealo',
-			                'destinatarios' => $this->$pais_amigo.$this->$tel_amigo,
-			                'texto' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
-			                'ruta' => 5,
-			                'alfabeto' => 0
-			            ));
+			//         if (strpos($envio, 'ERROR') > 0) {
+			//         echo    $sms_path = fullpath('services.premiumnumbers.es:8080/push/sendPush', array (
+			//                 'idCliente' => 81,
+			//                 'clave' => 'b1gi6g14t8584ro',
+			//                 'remitente' => 'Phonealo',
+			//                 'destinatarios' => '0034619097022042',
+			//                 'texto' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
+			//                 'ruta' => 5,
+			//                 'alfabeto' => 0
+			//             ));
 
-			            getapi($sms_path);
-			        }
+			//             getapi($sms_path);
+			//         }
 
 			        $datas = 1;
 				  
 			}else{
-				$datas = 'no 2';
+				$datas = 0;
 			}
 
 			return $datas;

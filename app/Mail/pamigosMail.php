@@ -7,6 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Http\Request;
+use App\Usuarios;
 
 
 class pamigosMail extends Mailable
@@ -14,15 +15,23 @@ class pamigosMail extends Mailable
     use Queueable, SerializesModels;
 
    
-
-    /**
+      /**
+     * The order instance.
+     *
+     * @var Usuarios
+     */
+    
+   /**
      * Create a new message instance.
      *
-     * @return Data $data
+     * @return void
      */
+    
+    //protected $usuarios;
+
     public function __construct()
     {
-        //
+        //$this->usuarios = $usuarios;
     }
 
     /**
@@ -38,7 +47,7 @@ class pamigosMail extends Mailable
         $email_amigo= $request['email_amigo'];
         $num_amigo= $request['num_amigo'];
 
-       //dd($amigo." ".$referente." ".$pais." ".$tela." ".$emailamigo);
+        $nombreReferente = Usuarios::where('usu_mobile', $referente)->first();
 
         return $this->from('contact@phonealo.com')
                     ->view('frontend.mail.mailPamigo')
@@ -49,7 +58,8 @@ class pamigosMail extends Mailable
                             'pais_amigo' => $pais_amigo,
                             'email_amigo' => $email_amigo,
                             'num_amigo' => $num_amigo,
+                            'usu_name' => $nombreReferente->usu_name
                       ])
-                    ->subject('¡Participa Conmigo!');  
+                    ->subject('Has sido recomendado');  
     }
 }

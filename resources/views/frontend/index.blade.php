@@ -10,6 +10,11 @@
 
 @include('frontend.recarga')
 
+<div style="background: #F6F7FA" class="py-5 ">
+  @include('frontend.tarifas')
+
+</div>
+
 <!--Full Width Image-->
 <div class="parallax" style="background-image: url('assets/alemania.png');" >
     <div class="container padding-200">
@@ -129,6 +134,7 @@
     $(document).ready(function(){
         var ancho = $(window).width();
 
+
         $(window).scroll(function(){
             var barra = $(window).scrollTop();
             // var posicion =  (barra * 0.1);
@@ -214,8 +220,6 @@ $(function(){
    
       
       $('#content-tarifa').addClass('d-none');
-      $("#tbody-pais").html(''); 
-
         $.ajax({
             type: "get",
             url: '{{ route('trae_paises') }}',
@@ -227,6 +231,7 @@ $(function(){
                 $('#content-pais').addClass('d-none');
               }else{
                 $('#content-pais').removeClass('d-none');
+                $("#tbody-pais").html(''); 
 
                 $.each(data, function(l, item) {
                   $("#tbody-pais").append('<tr id="pais" onclick="captura(this)" data-value="'+item.pais_country_prefix+'" ><td>'+item.pais_desc+'</td></tr>');
@@ -257,6 +262,15 @@ function captura(elemento){
     $('#content-pais').addClass('d-none');
     $('#content-tarifa').removeClass('d-none');
 
+    var pais = '{{$pais}}';
+
+    if (pais == 'DE' || pais == 'AT' || pais == 'BE' || pais == 'BG' || pais == 'CY' || pais == 'HR' || pais == 'DK' || pais == 'SI' || pais == 'ES' || pais == 'EE' || pais == 'FI' || pais == 'FR' || pais == 'IT' || pais == 'LV' || pais == 'LT' || pais == 'LU' || pais == 'MT' || pais == 'NL' || pais == 'PL' || pais == 'PT' || pais == 'GB' || pais == 'GB' || pais == 'RO' || pais == 'SE') {
+
+      var moneda = '€';
+    }else{
+      var moneda = '$';
+    }
+
       $.ajax({
           type: "get",
           url: '{{ route('trae_tarifa') }}',
@@ -266,7 +280,7 @@ function captura(elemento){
 
              $('.nombre_pais').html(data.pais+' ('+data.cod+') ');
 
-             $('#monto_tarifa').html(data.tarifa+'€');
+             $('#monto_tarifa').html(data.tarifa+moneda);
 
              $('#recarga_tarifa').html('<a href="https://app.phonealo.net/payment/init?amount=10&country='+value+'" class="btn" style="background: white; color: #c80000">{{trans('messages.btn_tarifas')}}</a>');
 

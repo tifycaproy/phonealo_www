@@ -23,6 +23,10 @@ body, html {
     text-align: justify;
 
 }
+
+.table-tarifas tbody tr{
+    cursor: pointer;
+}
 /*Tiendas*/
 #btn-tiendas{
     bottom: 30px; 
@@ -35,6 +39,11 @@ body, html {
 }
 .position-fixed{
     position: fixed;
+}
+
+.video-youtube{
+     width: 560px; 
+     height: 315px;
 }
 /*menu*/
 #menu{
@@ -560,6 +569,13 @@ input.input:focus{
 
 
 @media only screen and (max-width: 639px) {
+    
+    .video-youtube{
+        width: 100% !important;
+        height: auto !important;
+
+    }
+  
 
     .content{
         height: 40%;
@@ -708,9 +724,12 @@ input.input:focus{
         margin-top: 340px;
     }
 
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
 
      .w-iphone{
         width: 40%;

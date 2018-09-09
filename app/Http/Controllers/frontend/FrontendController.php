@@ -14,7 +14,7 @@ class FrontendController extends Controller
     public function index(Request $request)
    {
        
-       $paises = Paises::where('pais_active', 1)->get();
+       $paises = Paises::where('pais_active', 1)->orderBy('pais_desc', 'asc')->get();
 
       if (isset($_SERVER["HTTP_CLIENT_IP"]))
        {
@@ -97,7 +97,7 @@ class FrontendController extends Controller
    }
 
    public function privacity(){
-     $paises = Paises::where('pais_active', 1)->get();
+     $paises = Paises::where('pais_active', 1)->orderBy('pais_desc', 'asc')->get();
 
       if (isset($_SERVER["HTTP_CLIENT_IP"]))
        {
@@ -179,8 +179,7 @@ class FrontendController extends Controller
    }
 
    public function preguntas(){
-    $paises = Paises::where('pais_active', 1)->get();
-
+   $paises = Paises::where('pais_active', 1)->orderBy('pais_desc', 'asc')->get();
       if (isset($_SERVER["HTTP_CLIENT_IP"]))
        {
            $dip = $_SERVER["HTTP_CLIENT_IP"];

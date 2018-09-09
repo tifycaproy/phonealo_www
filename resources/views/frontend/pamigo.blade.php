@@ -18,7 +18,7 @@
           <div id="erro" class="col-12 p-3 mb-2 d-none text-center c-white" style="background: #DC143C">
            {{trans('messages.pamigoError')}} 
           </div>
-          <form action="#" id="form_pamigo" method="post" accept-charset="utf-8" onsubmit="return false">
+          <form action="{{ route('registroAmigo') }}" id="form_pamigo" method="post" accept-charset="utf-8" onsubmit="return false">
             <div class="row">
               <div class="form-group col-12">
                 <span id="error" class="d-none error ">{{trans('messages.pamigoNoexiste')}} </span>
@@ -34,7 +34,7 @@
                 <select name="pais_amigo" id="pais_amigo" class="form-control input-landing" required>
                   <option value="">{{trans('messages.pamigoPais')}}</option>
                   @foreach ($paises as $pais)
-                    <option value="{{ $pais->pais_cod }}">{{ $pais->pais_desc }}</option>
+                    <option value="{{ $pais->pais_country_prefix }}">{{ $pais->pais_desc }}</option>
                   @endforeach
                 </select>
               </div>

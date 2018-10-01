@@ -33,8 +33,8 @@ return [
     */
     'bots'                         => [
         'mybot' => [
-            'username'            => 'phonealo_bot',
-            'token'               => env('TELEGRAM_BOT_TOKEN', '661204001:AAFihxf4Yj7wpSE3X3Vgxh9xCdyde7y9U-Y'),
+            'username'            => 'phonealoesBot',
+            'token'               => env('TELEGRAM_BOT_TOKEN', '687968613:AAHyA7FWW7s3qJXg7sECbLkG8zVY021gXJ8'),
             'certificate_path'    => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url'         => env('TELEGRAM_WEBHOOK_URL', 'https://api.telegram.org/bot'),
             'commands'            => [

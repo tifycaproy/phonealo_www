@@ -21,6 +21,12 @@ return[
   'contacto1' =>'¡CONTACT!',
   'contacto2' =>'Phone',
   'contacto3' =>'Message',
+  'chattitulo' =>'Chat On Line',
+  'chatSuccess' => 'Thanks you for Contacting us',
+  'chatError' => 'Error sending',
+  'chatlblmensaje' => 'Write a message',
+  'chatbutton' => 'Send',
+
   'link1' => 'EN',
   'link2' => 'ES',
   'link3' => 'Your Phonealo',

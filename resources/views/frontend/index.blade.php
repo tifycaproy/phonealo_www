@@ -125,6 +125,7 @@
 
 @include('frontend.contacto')
  @include('frontend.pamigo')
+ @include('frontend.chat')
 @endsection
 
 @push('scripts')

@@ -38,6 +38,12 @@
                                 <img src="{{asset('assets/tg_circle.png')}}" alt=""  class="img-fluid">
                             </a>
                         </div>
+                      <div class="col-2">
+                           <a href="#" class="chatbutton">
+                                <img src="{{asset('assets/tg_circle.png')}}" alt=""  class="img-fluid">
+                            </a>
+                       </div>
+
                     </div>
                     
                 </div>
@@ -50,3 +56,47 @@
         </div>
 
     </div>
+
+ 
+
+    <div class="modal fade" id="mchat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+             <div class="modal-body">
+                <form id="frmchat" action="{{ route('enviar_mensaje') }}" name="frmchat"  novalidate="">
+
+                   <div class="row">
+                      <div class="form-group row col-5 col-md-2">
+                       <textarea name="txtmensaje" id="txtmensaje" cols="20" rows="3" placeholder="{{trans('messages.chatlblmensaje')}}"></textarea>
+                      </div>
+                      <div class="form-group row col-5 col-md-2">
+                        <input type="submit" class="btn-primary" value="{{trans('messages.chatbutton')}}">
+                         
+                      </div>
+
+                  </div>
+               </form>
+           </div>
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+@push('scripts')
+
+<script type="text/javascript" language="javascript">
+    $(document).on('click', '.chatbutton', function () {
+    var id = $(this).val();
+    $('#mchat').modal('show');
+    
+});
+</script>
+@endpush

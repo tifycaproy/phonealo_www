@@ -143,6 +143,8 @@
 
     @include('frontend.pamigo')
 
+   
+
     <!--Scripts-->
     
    {{--  <script src="https://maps.googleapis.com/js?Key=AIzaSyBaUGy-if65M1uS78Xemk77CxFvgEYU-Pk"></script> --}}

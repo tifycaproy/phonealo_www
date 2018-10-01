@@ -25,6 +25,12 @@ return[
   'link2' => 'ES',
   'link3' => 'Tú Phonealo',
   'comentario1' => 'Phonealo me ha ayudado a comunicarme con mi familia cuando más lo he necesitado. Gracias.', 
+  'chattitulo' =>'Chat en línea',
+  'chatSuccess' => 'Gracias por Contactarnos',
+  'chatError' => 'Error al enviar.',
+  'chatlblmensaje' => 'Escribe un mensaje',
+  'chatbutton' => 'Enviar',
+
   'comentario2' => 'No hay nada mejor, mis hijas puedes hablar con su abuela cada vez que lo desean.', 
   'comentario3' => 'Excelente servicio, me ayuda con mis emprendimientos y logros profesionales.',  
   'titulocomentario'=> '¡Phonealo tú tambien!',

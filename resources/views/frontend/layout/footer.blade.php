@@ -59,30 +59,13 @@
 
  
 
-    <div class="modal fade" id="mchat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-       <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-             <div class="modal-body">
-                <form id="frmchat" action="{{ route('enviar_mensaje') }}" name="frmchat"  novalidate="">
-
-                   <div class="row">
-                      <div class="form-group row col-5 col-md-2">
-                       <textarea name="txtmensaje" id="txtmensaje" cols="20" rows="3" placeholder="{{trans('messages.chatlblmensaje')}}"></textarea>
-                      </div>
-                      <div class="form-group row col-5 col-md-2">
-                        <input type="submit" class="btn-primary" value="{{trans('messages.chatbutton')}}">
-                         
-                      </div>
-
-                  </div>
-               </form>
-           </div>
 
 
-  </div>
-</div>
-</div>
 
+    
+            
+
+ 
 
 
 
@@ -98,5 +81,12 @@
     $('#mchat').modal('show');
     
 });
+
+    $(document).on('click', '.enviar', function () {
+    var id = $(this).val();
+    alert("prueba");
+    
+});
+
 </script>
 @endpush

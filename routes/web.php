@@ -60,4 +60,6 @@ Route::get('trae_tarifa', 'tarifasController@tarifa')->name('trae_tarifa');
 
 //Telegram
 Route::get('/activity', 'TelegramBotController@getUpdates');
-Route::post('enviar_mensaje', 'TelegramBotController@enviar_mensaje')->name("enviar_mensaje");
+
+Route::post('enviar', 'TelegramBotController@enviarmensaje')->name("enviar");
+

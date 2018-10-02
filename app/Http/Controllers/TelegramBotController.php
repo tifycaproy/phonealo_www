@@ -16,9 +16,21 @@ class TelegramBotController extends Controller
     public function getUpdates()
     {
         $updates = Telegram::getUpdates();
-        dd($updates);
+        //dd($updates);
     }
     public function enviarmensaje(Request $request){
+    //dd($text);    
+    $text = $request->txtmensaje;
+    Telegram::sendMessage([
+     'chat_id' => env('TELEGRAM_CHANNEL_ID', '-186986214'),
+     'parse_mode' => 'HTML',
+     'text' => $text
+    ]);
+
+     return redirect()->back()
+            ->with('status', 'success')
+            ->with('message', 'Message sent');
+
 
     }
    

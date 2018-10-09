@@ -38,7 +38,7 @@ return[
   'respuesta3' => 'En Phonealo pagaras por lo que hablas, tarificado por segundos. No redondeamos el tiempo de llamada, si hablas 3 minutos con 35 segundos pagaras exactamente esto.',
   'respuesta4' => 'Con Phonealo llamaras desde cualquier parte del mundo sin generar gastos en tu operador. Recuerda es importante este conectado a una red wifi o de lo contrario si consumes datos de tu operador es possible que este te los tarifique.',
   'pamigotitulo' => 'Phonealo con tus amigos y ganando minutos para disfrutar aun más',
-  'pamigoSuccess' => 'Registro Guardado Exitosamente',
+  'pamigoSuccess' => 'Gracias por la Recomendación',
   'pamigoError' => 'Error al registrar.',
   'pamigoNoexiste' => 'Usuario no Existe', 
   'pamigoTelefono' => 'Tu Telefono', 
@@ -48,7 +48,17 @@ return[
   'Invite' => 'INVITAR',
   'menuItem1' => 'Tu Phonealo',
   'menuItem2' => 'Tu Amigo',
+  'menuItem3' => '¿Qué es Phonealo?',
+
+  'tarifasTitulo' => 'Conoce las tarifas de Phonealo',
+  'tarifasPlaceholder' =>'¿A qué país quieres llamar?',
+  'textoTarifas1' => 'Llama todo lo que quieras a cualquier teléfono en',
+  'textoTarifas2' => 'y cancela solo lo que hablas.',
+  'btn_tarifas' => 'Recarga Ahora',
+  
   'mas' => 'Ver más',
+  'titulo_landing_ec' => '¿Quieres llamar a Ecuador movil o fijo solo por 0,33€?',
+  'titulo_landing_cu' => '¿Quieres llamar a Cuba movil o fijo solo por 0,33€?',
   'privacity' => ' <h2>Política de privacidad</h2>
    <p>Nosotros, Apel Global GSMA, S.R.L., con domicilio en B-Duc Mircea Cel Batran H5, Targoviste, Romania, junto con nuestras filiales, nos comprometemos a proteger tu información personal y respetar tu privacidad. En esta Política de privacidad describimos cómo recopilamos y tratamos tus datos personales. La Política de privacidad también establece los derechos que tienes con respecto a nosotros y cómo ejercerlos.</p> 
 

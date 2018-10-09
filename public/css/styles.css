@@ -23,6 +23,10 @@ body, html {
     text-align: justify;
 
 }
+
+.table-tarifas tbody tr{
+    cursor: pointer;
+}
 /*Tiendas*/
 #btn-tiendas{
     bottom: 30px; 

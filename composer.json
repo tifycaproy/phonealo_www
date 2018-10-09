@@ -20,12 +20,13 @@
     "autoload": {
         "classmap": [
             "database/seeds",
-            "database/factories"
+            "database/factories",
+            "app/lib"
         ],
         "psr-4": {
             "App\\": "app/"
         },
-         "files": ["app/geoiploc.php"]
+         "files": ["app/geoiploc.php", "app/lib/lib.php"]
     },
     "autoload-dev": {
         "psr-4": {

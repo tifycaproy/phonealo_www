@@ -4,9 +4,9 @@
       <h1 class="c-black title-h1">{{trans('messages.recarga1')}}</h1>
     </div>
     <div class="col-12 pb-5">
-      <div class="row d-flex justify-content-center">        
+      <div class="row d-flex justify-content-center"> 
           <div class="col-9 col-md-5 col-lg-4">
-            <form action="https://app.phonealo.net/payment/init" method="get" accept-charset="utf-8">
+          <form action="https://app.phonealo.net/payment/init" method="get" accept-charset="utf-8"> 
             <select name="amount" class="input ">
                <option value="">{{trans('messages.recarga2')}}</option>
                 <option value="5"><span class='moneda'></span>5 €</option>
@@ -17,7 +17,7 @@
                 <option value="500"><span class='moneda'></span>500 €</option>
              </select>
           </div>
-          <div class="col-12 col-md-5 col-lg-4 justify-content-center d-flex align-items-center">
+          <div class="col-12 col-md-5 col-lg-2 justify-content-center d-flex align-items-center">
             <input type="submit" class="btn btn-outline-danger btn-lg" value="{{trans('messages.btn_recarga')}}">
           </div>
         </form>
@@ -25,3 +25,4 @@
     </div>
   </div>
 </div>
+

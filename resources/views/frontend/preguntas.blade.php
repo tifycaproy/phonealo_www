@@ -19,13 +19,12 @@
             </div>
             <div class="info col-12 col-sm-6 col-md-4 my-2">
                 <h2>{{trans('messages.pregunta1')}}</h2>
-              <p>{{trans('messages.respuesta1')}}</p>
+                <p>{{trans('messages.respuesta1')}}</p>
             </div>
             <div class="info col-12 col-sm-6 col-md-4 my-2">
                 <h2>{{trans('messages.pregunta2')}}</h2>
                 <p>{{trans('messages.respuesta2')}}</p>
             </div>
-           
             <div class="info col-12 col-sm-6 col-md-4 my-2">
                 <h2>¿Cómo puedo conocer la tarifa?</h2>
                 <p>Tienes varias formas de conocer el precio de la llamada. En nuestra pagina web <a href="http://www.phonealo.com/" title="">www.phonealo.com</a> y desde la propia app</p>
@@ -34,12 +33,11 @@
                 <h2>¿Si la otra persona no descuelga ¿me cobran la llamada?</h2>
                 <p>No, si la otra persona no descuelga o comunica la llamada no te cuesta nada.</p>
             </div>
- <div class="info col-12 col-sm-6 col-md-4 my-2">
+            <div class="info col-12 col-sm-6 col-md-4 my-2">
                 <h2>¿Funciona con un teléfono de cualquier operador?</h2>
                 <p>Sí, funciona con cualquier operador.</p>
             </div>
             <div class="info col-12 col-sm-6 col-md-4 my-2">
-
                 <h2>¿Cómo puedo recargar saldo?</h2>
                 <p>Puedes recargar saldo entrando en nuestra web <a href="http://www.phonealo.com/" title="">www.phonealo.com</a></p>
             </div>
@@ -47,7 +45,7 @@
                 <h2>¿Cuándo caduca?</h2>
                 <p>Su saldo no caduca nunca.</p>
             </div>
-                        <div class="info col-12 col-sm-6 col-md-4 my-2">
+            <div class="info col-12 col-sm-6 col-md-4 my-2">
                 <h2>{{trans('messages.pregunta3')}}</h2>
                 <p>{{trans('messages.respuesta3')}}</p>
             </div>

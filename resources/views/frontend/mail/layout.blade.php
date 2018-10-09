@@ -149,12 +149,34 @@
   @yield('block1')
 
   <!-- //////////////////////////////////////// -->
+   <!-- //////////////////////////////////////// -->
+    <!-- tiendas -->
+    <div style=" text-align: center; margin-top: 3em">
+      <p class="btn_recarga" style="display: inline-flex;">
+      <a style="margin: 3px" href="https://itunes.apple.com/us/app/phonealo/id1425979442?l=es&ls=1&mt=8">
+        <img src="http://app.phonealo.net/images/btn_appstore.png" width="100px" alt="" />
+      </a>
+      
+      <a style="margin: 3px" href="https://play.google.com/store/apps/details?id=com.phonealo">
+        <img src="http://app.phonealo.net/images/btn_googleplay.png" width="100px" alt="" />
+      </a>     
+        </p>
+    </div>
+    
+    <!-- //////////////////////////////////////// -->
 
 </td></tr>
 </tbody></table></div><!--
 --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
 </td></tr>
 </tbody></table>
+
+
+
+   
+
+
+
 
 
 <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" style="background-color: #bfbfbf;" id="ko_hrBlock_8">
@@ -290,30 +312,6 @@
 </tbody></table></div><!--
 --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
 </td></tr>
-</tbody></table><table role="presentation" border="0" cellpadding="0" cellspacing="18" bgcolor="#ffffff" width="570" class="vb-container" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 18px; border-spacing: 18px; max-width: 570px; -mru-width: 0px;">
-
-<tbody><tr>
-<td valign="top" align="center"><table role="presentation" cellpadding="12" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 12px 12px 12px 12px;"><tbody><tr>
-<td width="auto" valign="middle" align="center" bgcolor="#bfbfbf" style="text-align: center; font-weight: normal; padding: 12px; padding-left: 14px; padding-right: 14px; background-color: transparent; color: #ffffff; font-size: 22px; font-family: Arial, Helvetica, sans-serif; border-radius: 4px;">
-
-
-    <!-- //////////////////////////////////////// -->
-    <!-- tiendas -->
-    <p class="btn_recarga" style="display: inline-flex;">
-      <a style="margin: 3px" href="https://itunes.apple.com/us/app/phonealo/id1425979442?l=es&ls=1&mt=8">
-        <img src="http://app.phonealo.net/images/btn_appstore.png" width="100px" alt="" />
-      </a>
-      
-      <a style="margin: 3px" href="https://play.google.com/store/apps/details?id=com.phonealo">
-        <img src="http://app.phonealo.net/images/btn_googleplay.png" width="100px" alt="" />
-      </a>     
-        </p>
-    <!-- //////////////////////////////////////// -->
-
-
-</td>
-</tr></tbody></table></td>
-</tr>  
 </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#3f3f3f" style="background-color: #3f3f3f;" id="ko_socialBlock_10">
 <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0;">
 <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--

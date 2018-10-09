@@ -10,6 +10,11 @@
 
 @include('frontend.recarga')
 
+<div style="background: #F6F7FA" class="py-5 ">
+  @include('frontend.tarifas')
+
+</div>
+
 <!--Full Width Image-->
 <div class="parallax" style="background-image: url('assets/alemania.png');" >
     <div class="container padding-200">
@@ -24,7 +29,7 @@
     </div>
 </div>
 
-<div class="row-green">
+<div class="row-green" id="quees">
     <div class="container">
         <div class="row d-flex align-items-center justify-content-center py-2 py-sm-5">
           <div class="col-12 col-sm-6 col-md-6 col-lg-6  pl-2-xs">
@@ -129,6 +134,7 @@
     $(document).ready(function(){
         var ancho = $(window).width();
 
+
         $(window).scroll(function(){
             var barra = $(window).scrollTop();
             // var posicion =  (barra * 0.1);
@@ -194,13 +200,97 @@ function mostrarError(error) {
   //alert("Error: " + errores[error.code]);
 }
 
-        // $(function () {
-        //     $('#verMas').bind("click", function () {
-        //         var dest = $("#one").offset().top;
-        //         $("html, body").animate({scrollTop: dest},1000);
-        //     });
 
-        // });
+         $(function () {
+            $('#que').bind("click", function () {
+                var dest = $("#quees").offset().top - 150;
+                $("html, body").animate({scrollTop: dest},1000);
+            });
+
+        });
+
+
+
+// TARIFAS
+
+$(function(){
+  $('#input-tarifas').keyup(function(event) {
+    var input_pais = $(this).val();
+    if (input_pais.length > 0) {
+   
+      
+      $('#content-tarifa').addClass('d-none');
+        $.ajax({
+            type: "get",
+            url: '{{ route('trae_paises') }}',
+            dataType: "json",
+            data: { pais: input_pais },
+            success: function (data){
+
+              if (data.length == 0) {
+                $('#content-pais').addClass('d-none');
+              }else{
+                $('#content-pais').removeClass('d-none');
+                $("#tbody-pais").html(''); 
+
+                $.each(data, function(l, item) {
+                  $("#tbody-pais").append('<tr id="pais" onclick="captura(this)" data-value="'+item.pais_country_prefix+'" ><td>'+item.pais_desc+'</td></tr>');
+                });
+
+              }
+
+              
+            }
+
+        });
+    } else{
+      //console.log('vacio');
+      $('#content-pais').addClass('d-none');
+      $('#content-tarifa').addClass('d-none');
+    }
+    
+  });
+
+  
+});
+
+function captura(elemento){
+    var value = $(elemento).data('value');
+
+    $('#input-tarifas').val('');
+    
+    $('#content-pais').addClass('d-none');
+    $('#content-tarifa').removeClass('d-none');
+
+    var pais = '{{$pais}}';
+
+    if (pais == 'DE' || pais == 'AT' || pais == 'BE' || pais == 'BG' || pais == 'CY' || pais == 'HR' || pais == 'DK' || pais == 'SI' || pais == 'ES' || pais == 'EE' || pais == 'FI' || pais == 'FR' || pais == 'IT' || pais == 'LV' || pais == 'LT' || pais == 'LU' || pais == 'MT' || pais == 'NL' || pais == 'PL' || pais == 'PT' || pais == 'GB' || pais == 'GB' || pais == 'RO' || pais == 'SE') {
+
+      var moneda = '€';
+    }else{
+      var moneda = '$';
+    }
+
+      $.ajax({
+          type: "get",
+          url: '{{ route('trae_tarifa') }}',
+          dataType: "json",
+          data: { value: value },
+          success: function (data){
+
+             $('.nombre_pais').html(data.pais+' ('+data.cod+') ');
+
+             $('#monto_tarifa').html(data.tarifa+moneda);
+
+             $('#recarga_tarifa').html('<a href="https://app.phonealo.net/payment/init?amount=10&country='+value+'" class="btn" style="background: white; color: #c80000">{{trans('messages.btn_tarifas')}}</a>');
+
+
+          }
+
+      });
+
+
+}
 
 </script>
 

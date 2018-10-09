@@ -21,10 +21,11 @@ class pamigosController extends Controller
 
 
 		$referente = Usuarios::where('usu_mobile', $referente_form)->first();
+		$nombreReferente = $referente->usu_name;
 
 		if ($referente == NULL) {
 
-			$datas = 'no 1';
+			$datas = 0;
 
 		}else{
 
@@ -49,20 +50,20 @@ class pamigosController extends Controller
 				$sms_path = fullpath('api.smsarena.es/http/sms.php', array (
 				          'auth_key' => 'dLVik8N5OGgFYlOR219aZqlFE9pFXsv0',
 				          'from' => 'Phonealo',
-				          'to' => $this->$pais_amigo.$this->$tel_amigo,
-				          'text' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
+				          'to' => $pais_amigo.$tel_amigo,
+				          'text' => 'Tu amigo '.$nombreReferente.' te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
 				          'id' => time()
 				      ), 'https');
 
 				$envio = file_get_contents($sms_path);
 
 			        if (strpos($envio, 'ERROR') > 0) {
-			            $sms_path = fullpath('services.premiumnumbers.es:8080/push/sendPush', array (
+			        $sms_path = fullpath('services.premiumnumbers.es:8080/push/sendPush', array (
 			                'idCliente' => 81,
 			                'clave' => 'b1gi6g14t8584ro',
 			                'remitente' => 'Phonealo',
-			                'destinatarios' => $this->$pais_amigo.$this->$tel_amigo,
-			                'texto' => 'Tu amigo usu_name te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
+			                'destinatarios' => $pais_amigo.$tel_amigo,
+			                'texto' => 'Tu amigo '.$nombreReferente.' te ha recomendado para que uses Phonealo tu app para llamar barato, te dejamos el enlace https://app.phonealo.net/getNow',
 			                'ruta' => 5,
 			                'alfabeto' => 0
 			            ));
@@ -73,7 +74,7 @@ class pamigosController extends Controller
 			        $datas = 1;
 				  
 			}else{
-				$datas = 'no 2';
+				$datas = 0;
 			}
 
 			return $datas;

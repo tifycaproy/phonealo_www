@@ -19,11 +19,15 @@
     
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
         <li class="nav-item">
           <a class="nav-link" href="https://app.phonealo.net/balance">{{trans('messages.menuItem1')}} <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" data-toggle="modal" data-target="#pamigo">{{trans('messages.menuItem2')}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" id="que">{{trans('messages.menuItem3')}}</a>
         </li>
       </ul>
     </div>

@@ -57,6 +57,9 @@ return[
   'btn_tarifas' => 'Refill Now',
  
   'mas' => 'More',
+  'titulo_landing_ec' => 'Do you want to call a mobile or landline in Ecuador for only 0.33€?',
+  'titulo_landing_cu' => 'Do you want to call a mobile or landline in Cuba for only 0.33€?',
+
   'privacity' => "<h2> Privacy Policy </h2>
    <p> We, Apel Global GSMA, S.R.L., residing at B-Duc Mircea Cel Batran H5, Targoviste, Romania, together with our subsidiaries, are committed to protecting your personal information and respecting your privacy. In this Privacy Policy we describe how we collect and process your personal information. The Privacy Policy also establishes the rights you have with respect to us and how to exercise them. </p>
 

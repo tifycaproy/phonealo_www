@@ -33,7 +33,7 @@
         <div class="row d-flex align-items-center justify-content-center h-75 pt-5">
             <div class="col-12 col-md-10 d-flex justify-content-center row mt-4 text-shadow">
                 <h1 class="col-12 c-white bold title-landing text-center  " >
-                   ¿Quieres llamar a cualquier parte del mundo al mejor precio?
+                   @yield('titulo')
                 </h1>
                 <h2 class="col-12 c-white text-white conten-landing my-2 my-md-4 text-center">
                     <b>Descarga Phonealo, tu app de llamas internacionales, con la que podrás comunicarte con tus seres queridos en todo momento.</b>

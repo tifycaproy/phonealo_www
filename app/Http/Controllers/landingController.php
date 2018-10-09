@@ -34,6 +34,8 @@ class landingController extends Controller
             $landing->save();
 
             $respuesta = 1;
+
+            Mail::to($email)->send(new landingMail());
         }
 
 

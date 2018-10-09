@@ -164,9 +164,9 @@
         }
 
 
-    $.get("https://ipinfo.io", function(response) {
-          //console.log(response.ip, response.country);
-      }, "jsonp")
+    // $.get("https://ipinfo.io", function(response) {
+    //       //console.log(response.ip, response.country);
+    //   }, "jsonp")
 
 
     });

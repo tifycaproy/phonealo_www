@@ -74,9 +74,38 @@
                 <ul class="pl-2">
                     <li class="info">
                         <p>
-                            Pagar por lo que hablas, tarificado por segundos. No redondeamos el tiempo de llamada.
+                            Paga por lo que hablas, tarificado por segundos. No redondeamos el tiempo de llamada.
                         </p>
                         
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+                <ul class="pl-2">
+                    <li class="info">
+                        <p>
+                            Llamar a todo el mundo y funciona con cualquier operador en cualquier país por el mismo coste.
+                        </p>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+                <ul class="pl-2">
+                    <li class="info">
+                        <p>
+                            Estar siempre conectado. Tu saldo no caduca nunca, recarga ahora y utilizalo en el momento que desees. 
+                        </p>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 mt-5">
+                <ul class="pl-2">
+                    <li class="info">
+                        <p>
+                            Obtener Beneficios. Invita a todos tus amigos y llama gratis.  
+                        </p>
                     </li>
                 </ul>
             </div>

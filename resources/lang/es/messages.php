@@ -57,6 +57,8 @@ return[
   'btn_tarifas' => 'Recarga Ahora',
   
   'mas' => 'Ver más',
+  'titulo_landing_ec' => '¿Quieres llamar a Ecuador movil o fijo solo por 0,33€?',
+  'titulo_landing_cu' => '¿Quieres llamar a Cuba movil o fijo solo por 0,33€?',
   'privacity' => ' <h2>Política de privacidad</h2>
    <p>Nosotros, Apel Global GSMA, S.R.L., con domicilio en B-Duc Mircea Cel Batran H5, Targoviste, Romania, junto con nuestras filiales, nos comprometemos a proteger tu información personal y respetar tu privacidad. En esta Política de privacidad describimos cómo recopilamos y tratamos tus datos personales. La Política de privacidad también establece los derechos que tienes con respecto a nosotros y cómo ejercerlos.</p> 
 

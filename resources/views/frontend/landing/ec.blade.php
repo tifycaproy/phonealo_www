@@ -4,6 +4,10 @@
 
 @section('img', 'background-image: url("assets/phonehand2.jpg");')
 
+@section('titulo')
+	{{trans('messages.titulo_landing_ec')}}
+@endsection
+
 @section ('form1')
   <form id="form_landing" onsubmit="return false" >
     @include('frontend.landing.form') 

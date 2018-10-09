@@ -17,7 +17,11 @@ p{
 
 }
 
-
+.parallax1{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
 .title-landing{
 	font-family: 'brandingbolditalic';

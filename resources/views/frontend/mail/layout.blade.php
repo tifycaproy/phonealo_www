@@ -151,7 +151,7 @@
   <!-- //////////////////////////////////////// -->
    <!-- //////////////////////////////////////// -->
     <!-- tiendas -->
-    <div style=" text-align: center; margin-top: 3em">
+    <div style=" text-align: center; margin-top: 3em; width: 100%">
       <p class="btn_recarga" style="display: inline-flex;">
       <a style="margin: 3px" href="https://itunes.apple.com/us/app/phonealo/id1425979442?l=es&ls=1&mt=8">
         <img src="http://app.phonealo.net/images/btn_appstore.png" width="100px" alt="" />
@@ -206,34 +206,8 @@
 --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%);"><!--
 --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%);" width="184" align="left">
 
-<tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 9px;"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px;"><![endif]-->
-
-
-<!-- //////////////////////////////////////// -->
-<!-- IMAGEN 1 DE COMENTARIOS -->
-  <div class="" style="width: 130px; height: 130px;  border-radius: 50%; overflow: hidden; ">
-    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important; margin: 0 0 0 -60px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail2.jpeg">
-  </div>
-  
-<!-- //////////////////////////////////////// -->
-
-
-<!--[if (lte ie 8)]></div><![endif]--></td></tr>
-<tr>
-<td width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif; text-align: left;"></td>
-</tr>
-            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal; text-align: center;">
-
-  <!-- //////////////////////////////////////// -->
-  <!-- TEXTO 1 COMENTARIOS -->
-     <i style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">"Phonealo me ha ayudado a comunicarme con mi familia cuando más lo he necesitado. Gracias."&nbsp;</i>
-  <!-- //////////////////////////////////////// -->
-
-
-</td></tr>
-<tr>
-<td valign="top" align="left"><table role="presentation" cellpadding="6" border="0" align="left" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 6px 6px 6px; padding-top: 4px;"><tbody></tbody></table></td>
-</tr>
+<tbody>
+  @yield('comentario1')
 </tbody></table><!--
 --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
 --><!--
@@ -241,69 +215,17 @@
 --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%);"><!--
 --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%);" width="184" align="left">
 
-<tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 9px;"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px;"><![endif]-->
-
-
-  <!-- //////////////////////////////////////// -->
-  <!-- IMAGEN 2 COMENTARIOS -->
-  <div class="" style="width: 130px; height: 130px;  border-radius: 50%; overflow: hidden; ">
-    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important;  margin: 0 0 0 -60px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail4.jpeg">
-  </div>
-  <!-- //////////////////////////////////////// -->
-
-
-  <!--[if (lte ie 8)]></div><![endif]--></td></tr>
-<tr>
-<td width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif; text-align: left;"></td>
-</tr>
-<tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal; text-align: center;">
-
-
-<!-- //////////////////////////////////////// -->
-<!-- TEXTO 2 COMENTARIOS -->
-  <i style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">"Excelente servicio, me ayuda con mis emprendimientos y logros profesionales."&nbsp;</i>
-<!-- //////////////////////////////////////// -->
-
-
-</td></tr>
-<tr>
-<td valign="top" align="left"><table role="presentation" cellpadding="6" border="0" align="left" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 6px 6px 6px; padding-top: 4px;"><tbody></tbody></table></td>
-</tr> </tbody></table><!--
+<tbody>
+  @yield('comentario2')
+ </tbody></table><!--
 --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
 --><!--
 --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]--><!--
 --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%);"><!--
 --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%);" width="184" align="left">
 
-<tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 9px;"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px;"><![endif]-->
-
-
-
-  <!-- //////////////////////////////////////// -->
-  <!-- IMAGEN 3 COMENTARIOS -->
-   <div class="" style="width: 130px; height: 130px;  border-radius: 50%; overflow: hidden; ">
-    <img alt="" border="0" hspace="0" align="center" vspace="0" width="166" height="90" style=" border: 0px; display: block; vertical-align: top; height: 100% !important;  margin: 0 0 0 -60px; color: #3f3f3f; font-size: 13px; width: auto; height: auto;" src="http://app.phonealo.net/images/mail3.jpeg">
-  </div>
-<!-- //////////////////////////////////////// -->
-
-
-  <!--[if (lte ie 8)]></div><![endif]--></td></tr>
-<tr>
-<td width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif; text-align: left;"></td>
-</tr>
-<tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: normal; text-align: center;">
-
-
-<!-- //////////////////////////////////////// -->
-<!-- TEXTO 3 COMENTARIOS -->
-    <i style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">"No hay nada mejor, mis hijas puedes hablar con su abuela cada vez que lo desean."</i>
-  <!-- //////////////////////////////////////// -->
-
-
-</td></tr>
-<tr>
-<td valign="top" align="left"><table role="presentation" cellpadding="6" border="0" align="left" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 6px 6px 6px; padding-top: 4px;"><tbody></tbody></table></td>
-</tr>
+<tbody>
+  @yield('comentario3')
 </tbody></table><!--
 --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
 --><!--

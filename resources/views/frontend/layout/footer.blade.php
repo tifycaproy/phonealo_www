@@ -15,27 +15,27 @@
                     <div class="row d-flex justify-content-center justify-content-sm-end ">
                         <div class="col-2">
                             <a target="blank_" href="https://www.instagram.com/phonealo_app/" title="Instagram">
-                                <img src="{{ asset('assets/ig_circle.svg') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/ig_circle.svg') }}" alt="">
                             </a>
                         </div>
                         <div class="col-2">
                             <a target="blank_" href="https://www.facebook.com/Phonealo-642900916095975/?modal=admin_todo_tour" title="Facebook">
-                                <img src="{{ asset('assets/fb_circle.svg') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/fb_circle.svg') }}" alt="">
                             </a>
                         </div>
                         <div class="col-2">
                             <a target="blank_" href="#">
-                                <img src="{{ asset('assets/tw_circle.svg') }}" alt="@Phonealo1">
+                                <img class="img-fluid" src="{{ asset('assets/tw_circle.svg') }}" alt="@Phonealo1">
                             </a>
                         </div>
                         <div class="col-2">
                             <a target="blank_" href="skype:phonealo app">
-                                <img src="{{ asset('assets/sk_circle.svg') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('assets/sk_circle.svg') }}" alt="">
                             </a>
                         </div>
                          <div class="col-2">
                             <a target="blank_" href="https://t.me/phonealo">
-                                <img src="{{asset('assets/tg_circle.png')}}" alt=""  class="img-fluid">
+                                <img class="img-fluid" src="{{asset('assets/tg_circle.png')}}" alt=""  class="img-fluid">
                             </a>
                         </div>
                     </div>

@@ -2,15 +2,12 @@
 
 
 @section('titulo')
-<strong>Gracias Por suscribirte</strong>
+<strong>Gracias por registrarte</strong>
 @endsection
 @section ('block1')
 
-<p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: center;">Tu amigo <strong> {{ $usu_name }}</strong>  te ha inivtado a que pruebes nuestra app.</p>
-<br>
-<p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: center;">Descargala ahora y con tu primera recarga recibe el doble del importe. </p>
-<br>
-<p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: center;">Phonealo es la unica app que hace recarga doble. </p>
+<p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: center; font-size: 2rem"> Te matendremos informado de nuestras ofertas y recuerda que con primera recarga obtienes el doble </p>
+
 <br>
 <br>
 

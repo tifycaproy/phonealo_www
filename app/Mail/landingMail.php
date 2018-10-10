@@ -33,6 +33,6 @@ class landingMail extends Mailable
 
         return $this->from('contact@phonealo.com')
                     ->view('frontend.mail.landingMail')
-                    ->subject('Has sido recomendado'); 
+                    ->subject('Phonealo'); 
     }
 }

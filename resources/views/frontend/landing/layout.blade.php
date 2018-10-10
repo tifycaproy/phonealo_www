@@ -306,6 +306,7 @@
                     success: function (data){
 
                             console.log(data);
+                            
                         if (data == 0) {
                          
                             $('#error').removeClass('d-none');

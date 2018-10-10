@@ -45,48 +45,114 @@
 
 <div class="bg-white">
     <div class="container">
-
       <h1 class=" text-center py-5 title-h1" style="color: #c80000">{{trans('messages.titulocomentario')}}</h1>
-        <div class="row pb-5">
-            
-          <div class=" col-12 col-sm-4 text-center " >
-            <div class="row d-flex justify-content-center">
-              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
-              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail2.jpeg') }}" alt="Card image cap">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <div class="carousel-inner">
+          <div class="carousel-item ">
+
+            <div class="row pb-5">
+
+              <div class=" col-12 col-sm-4 text-center " >
+                <div class="row d-flex justify-content-center">
+                  <div class="text-center comentarios" >
+                    <img class="card-img-top"   src="{{ asset('assets/mail2.jpeg') }}" alt="">
+                  </div>
+                  <div class="card-body col-12">
+                    <img class="mb-1" src="{{ asset('assets/star_ios.png') }}" alt="">
+                    <br>
+                    <i class="card-text">"{{trans('messages.comentario1')}}"</i>
+                  </div>
+                  </div>
+              </div>
+
+              <div class=" col-12 col-sm-4 text-center " >
+                <div class="row d-flex justify-content-center">
+                  <div class="text-center comentarios" style="">
+                    <img class="card-img-top" style="" src="{{ asset('assets/mail4.jpeg') }}" alt="">
+                  </div>
+                  <div class="card-body col-12">
+                    <img class="mb-1" src="{{ asset('assets/star_android.png') }}" alt="">
+                    <br>
+                    <i class="card-text">"{{trans('messages.comentario3')}}"</i>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" col-12 col-sm-4 text-center " >
+                <div class="row d-flex justify-content-center">
+                  <div class="text-center comentarios" >
+                    <img class="card-img-top" src="{{ asset('assets/mail3.jpeg') }}" alt="">
+                  </div>
+                  <div class="card-body col-12">
+                    <img class="mb-1" src="{{ asset('assets/star_ios.png') }}" alt="">
+                    <br>
+                    <i class="card-text">"{{trans('messages.comentario2')}}"</i>
+                  </div>
+                  </div>
+              </div>
+
             </div>
-            
-            <div class="card-body col-12">
-              <i class="card-text">"{{trans('messages.comentario1')}}"</i>
-            </div>
-            </div>
-            
+
+
           </div>
-          <div class=" col-12 col-sm-4 text-center " >
-            <div class="row d-flex justify-content-center">
-              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
-              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail4.jpeg') }}" alt="Card image cap">
+          <div class="carousel-item active">
+            <div class="row pb-5">
+
+              <div class=" col-12 col-sm-4 text-center " >
+                <div class="row d-flex justify-content-center">
+                  <div class="text-center comentarios" >
+                    <img class="card-img-top" style="margin-left: 0px !important" src="{{ asset('assets/mail1.png') }}" alt="">
+                  </div>
+                  <div class="card-body col-12">
+                    <img class="mb-1" src="{{ asset('assets/star_android.png') }}" alt="">
+                    <br>
+                    <i class="card-text">"{{trans('messages.comentario4')}}"</i>
+                  </div>
+                  </div>
+              </div>
+
+              <div class=" col-12 col-sm-4 text-center " >
+                <div class="row d-flex justify-content-center">
+                  <div class="text-center comentarios" style="">
+                    <img class="card-img-top" style="" src="{{ asset('assets/mail5.jpeg') }}" alt="">
+                  </div>
+                  <div class="card-body col-12">
+                    <img class="mb-1" src="{{ asset('assets/star_ios.png') }}" alt="">
+                    <br>
+                    <i class="card-text">"{{trans('messages.comentario5')}}"</i>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" col-12 col-sm-4 text-center " >
+                <div class="row d-flex justify-content-center">
+                  <div class="text-center comentarios" >
+                    <img class="card-img-top" src="{{ asset('assets/mail6.jpeg') }}" alt="Card image cap">
+                  </div>
+                  <div class="card-body col-12">
+                    <img class="mb-1" src="{{ asset('assets/star_android.png') }}" alt="">
+                    <br>
+                    <i class="card-text">"{{trans('messages.comentario6')}}"</i>
+                  </div>
+                  </div>
+              </div>
+
             </div>
-            
-            <div class="card-body col-12">
-              <i class="card-text">"{{trans('messages.comentario3')}}"</i>
-            </div>
-            </div>
-            
           </div>
-          <div class=" col-12 col-sm-4 text-center " >
-            <div class="row d-flex justify-content-center">
-              <div class="text-center " style="border-radius: 50%; overflow: hidden; width: 200px; height: 200px">
-              <img class="card-img-top" style="height: 100%; width: auto; margin-left: -40px; " src="{{ asset('assets/mail3.jpeg') }}" alt="Card image cap">
-            </div>
-            
-            <div class="card-body col-12">
-              <i class="card-text">"{{trans('messages.comentario2')}}"</i>
-            </div>
-            </div>
-            
-          </div>
+          
         </div>
+      </div>
     </div>
+</div>
+<div class="text-center d-flex justify-content-center py-5" style="background: #F6F7FA">
+  <div class="col-12 col-md-6 ">
+    <h2 class="">{{trans('messages.tit_form')}}</h2>
+    <form id="form_landing" onsubmit="return false" >
+    @include('frontend.landing.form') 
+    <input type="hidden" name="pais" id="pais" required value="{{$pais}}" readonly >
+  </form>
+  </div>
+  
 </div>
 <div class="" style="background: #F6F7FA">
     <div class="container">
@@ -121,6 +187,7 @@
     </div>
 
 </div>
+
  
 
 @include('frontend.contacto')
@@ -291,6 +358,73 @@ function captura(elemento){
 
 
 }
+
+
+
+            //VALIDA EMAIL MIENTRAS ESCRIBE
+            $("input#email").keyup(function(){
+               
+               var email = $("input#email").val();
+
+               $.ajax({
+                    type: "get",
+                    url: '{{ route('verifica_email') }}',
+                    dataType: "json",
+                    data: { email: email },
+                    success: function (data){
+
+                        if (data > 0) {
+                            $('#enviar').prop('disabled', true);
+                            $('#error').removeClass('d-none');
+
+                        }else{
+                          $('#enviar').prop('disabled', false);  
+                          $('#error').addClass('d-none');
+                        }
+                    }
+
+                });
+
+            });
+            //FIN VALIDACION EMAIL
+            //
+            //ALMACENA LOS DATOS
+            $("#form_landing").submit(function(){
+
+            var email = $("input#email").val();
+            var pais = $("input#pais").val();
+
+
+        
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type: "post",
+                    url: '{{ route('email_landing') }}',
+                    dataType: "json",
+                    data: { email: email, pais:pais ,_token: '{{csrf_token()}}' },
+                    success: function (data){
+
+                            console.log(data);
+                            
+                        if (data == 0) {
+                         
+                            $('#error').removeClass('d-none');
+
+                        }else{
+                          
+                          $('#error').addClass('d-none');
+                          $('#modalSuccess').modal('show');
+                        }
+                    }
+
+                });
+            });
+
+          
 
 </script>
 

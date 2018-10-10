@@ -1,11 +1,26 @@
 <?php
 return[
-  'layout1' => 'Descarga nuestra aplicación',
-  'layout2' => 'Nuestro compromiso siempre es conseguir la mejor calidad al mejor precio',	
-  'layout3' => 'Llamadas internacionales',
-  'layout4' => 'Phonealo utiliza la tecnología más innovadora para que puedas llamar en el extranjero',
-  'layout5' => 'Chatea y Cuéntaselo todo',
-  'layout6' => 'Hasta el último detalle con la gente que te importa.',
+  //slider1
+  'layout1' => 'Llama a Cuba desde 0,33€',
+  'layout2' => 'Consulta nuestras tarifas y comunícate cuando quieras',	
+  ////
+  //slider3
+  'layout3' => 'Llama a Ecuador desde 0,05€',
+  'layout4' => 'Consulta nuestras tarifas y comunícate cuando quieras',
+  ////
+  //slider5
+  'layout5' => 'Habla GRATIS con Phonealo',
+  'layout6' => 'Trae a tus amigos y te regalamos minutos.',
+  ////
+  //slider4
+  'layout7' => 'Consulta nuestra tarifas',
+  'layout8' => 'Nuestros precios son tarificados por segundo.',
+  ////
+  //slider2
+  'layout9' => 'Sientete Libre',
+  'layout10' => 'Llevate Phonealo a todas partes',
+  ////
+  'tit_form' => 'Déjanos tu email y mantente conectado.',
   'indice1' => 'Conéctate con tus seres queridos',
   'indice2' => 'Nuestro compromiso siempre es conseguir la mejor calidad al mejor precio.',
   'indice3' => '¿Qué es Phonealo?',
@@ -26,7 +41,10 @@ return[
   'link3' => 'Tú Phonealo',
   'comentario1' => 'Phonealo me ha ayudado a comunicarme con mi familia cuando más lo he necesitado. Gracias.', 
   'comentario2' => 'No hay nada mejor, mis hijas puedes hablar con su abuela cada vez que lo desean.', 
-  'comentario3' => 'Excelente servicio, me ayuda con mis emprendimientos y logros profesionales.',  
+  'comentario3' => 'Excelente servicio, me ayuda con mis emprendimientos y logros profesionales.', 
+  'comentario4' => 'Excelente app gracias por el aporte.', 
+  'comentario5' => 'App espectacular!!! Acabo de utilizarla, llamada directa, sin operadora de por medio, muy rápida se oye súper bien!!! ', 
+  'comentario6' => 'Excelente app puedo llamar en cualquier momento muy barato.',  
   'titulocomentario'=> '¡Phonealo tú tambien!',
   'titulopreguntas' => 'Preguntas Frecuentes',
   'pregunta1' => '¿Puedo llamar a cualquier teléfono?',
@@ -57,7 +75,7 @@ return[
   'btn_tarifas' => 'Recarga Ahora',
   
   'mas' => 'Ver más',
-  'titulo_landing_ec' => '¿Quieres llamar a Ecuador movil o fijo solo por 0,33€?',
+  'titulo_landing_ec' => '¿Quieres llamar a Ecuador movil o fijo solo por 0,05€?',
   'titulo_landing_cu' => '¿Quieres llamar a Cuba movil o fijo solo por 0,33€?',
   'privacity' => ' <h2>Política de privacidad</h2>
    <p>Nosotros, Apel Global GSMA, S.R.L., con domicilio en B-Duc Mircea Cel Batran H5, Targoviste, Romania, junto con nuestras filiales, nos comprometemos a proteger tu información personal y respetar tu privacidad. En esta Política de privacidad describimos cómo recopilamos y tratamos tus datos personales. La Política de privacidad también establece los derechos que tienes con respecto a nosotros y cómo ejercerlos.</p> 

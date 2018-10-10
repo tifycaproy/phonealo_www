@@ -15,6 +15,18 @@ body, html {
     font-style: normal;
 
 }
+
+.comentarios{
+    border-radius: 50%; 
+    overflow: hidden; 
+    width: 200px; 
+    height: 200px
+}
+.comentarios img{
+    height: 100%; 
+    width: auto; 
+    margin-left: -40px; 
+}
 .privacity p, .privacity h3 {
     color: black !important;
 }

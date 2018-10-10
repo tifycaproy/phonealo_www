@@ -1,11 +1,27 @@
 <?php
 return[
-  'layout1' => 'Download our application',
-  'layout2' => 'Our commitment is always to get the best quality at the best price',	
-  'layout3' => 'International calls',
-  'layout4' => 'Phonealo uses the most innovative technology so you can call abroad',
-  'layout5' => 'Chat and tell everything',
-  'layout6' => 'Down to the last detail with the people you care about.',
+   //slider1
+  'layout1' => 'Call Cuba from 0.33€',
+  'layout2' => 'Check our rates and communicate when you want.', 
+  ////
+  //slider3
+  'layout3' => 'Call Ecuador from 0,05€',
+  'layout4' => 'Check our rates and communicate when you want.',
+  ////
+  //slider5
+  'layout5' => 'Talk FREE with Phonealo',
+  'layout6' => 'Bring your friends and we give you minutes.',
+  ////
+  //slider4
+  'layout7' => 'Check our rates',
+  'layout8' => 'Our prices are charged per second.',
+  ////
+  //slider2
+  'layout9' => 'Feel Free',
+  'layout10' => 'Take Phonealo everywhere.',
+  ////
+  'tit_form' => 'Leave us your email and stay connected.',
+  
   'indice1' => 'Connect with your loved ones',
   'indice2' => 'Our commitment is always to get the best quality at the best price.',
   'indice3' => '¿What is Phonealo?',
@@ -27,6 +43,9 @@ return[
   'comentario1' => 'Phonealo has helped me communicate with my family when I needed it the most. Thank you.',
   'comentario2' => "There's nothing better, my daughters can talk to their grandmother whenever they want.",
   'comentario3' => 'Excellent service, it helps me with my endeavors and professional achievements.',
+  'comentario4' => 'Excellent app thanks for the contribution.', 
+  'comentario5' => 'Spectacular app! I just use it, direct call, without operator through, very fast you hear super good!', 
+  'comentario6' => 'Excellent app I can call at any time very cheap.',
   'titulocomentario'=> 'Phonealo you too!',
   'titulopreguntas' => 'Frequent questions',
   'pregunta1' => 'Can I call any phone?',

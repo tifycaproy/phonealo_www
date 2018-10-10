@@ -21,9 +21,13 @@
 <div id="menu" class="col-12 position-absolute p-0" >
     <div class="container-fluid p-0">
      <div class="row m-0 d-flex justify-content-center justify-content-sm-start align-items-center background-white" style="height: 70px">
+        
         <div class="h-100 py-1 pl-sm-5" >
+            <a href="https://www.phonealo.com/">
             <img src="assets/logo.svg" height="100%" class="" >
+            </a>
         </div>
+        
     </div>    
     </div>
 </div>
@@ -302,6 +306,7 @@
                     success: function (data){
 
                             console.log(data);
+                            
                         if (data == 0) {
                          
                             $('#error').removeClass('d-none');

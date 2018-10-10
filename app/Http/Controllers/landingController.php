@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Landing;
+use App\Mail\landingMail;
+use Mail;
 
 class landingController extends Controller
 {
@@ -24,7 +26,7 @@ class landingController extends Controller
 
         if ($verifica > 0) {
 
-            $respuesta = 0;
+            $data = 0;
 
         }else{
 
@@ -32,12 +34,14 @@ class landingController extends Controller
             $landing->email = $email;
             $landing->pais = $pais;
             $landing->save();
+                
+                Mail::to($email)->send(new landingMail());
 
-            $respuesta = 1;
+           $data = 1;
         }
 
 
-    	return $respuesta;
+    	return $data;
 
 
     }

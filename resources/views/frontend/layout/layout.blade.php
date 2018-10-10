@@ -85,8 +85,8 @@
             </div>
          <div class="w-100"></div>
              <div class="col pt-1 text-right">
-                <a href="https://t.me/phonealo" title="">
-                     <img src="{{asset('assets/tw_circle.svg')}}" alt="@Phonealo1" class="w-25"> 
+                <a href="https://twitter.com/PhonealoA?lang=es" title="">
+                     <img src="{{asset('assets/tw_circle.svg')}}" alt="@PhonealoA" class="w-25"> 
 
                 </a>
             </div>
@@ -99,7 +99,7 @@
             </div>
         <div class="w-100"></div>
              <div class="col pt-1 text-right">
-                <a target="blank_" href="">
+                <a href="https://t.me/phonealo" target="blank_" href="">
                      <img src="{{asset('assets/tg_circle.png')}}" alt=""  class="w-25">
 
                 </a>
